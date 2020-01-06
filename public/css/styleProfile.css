@@ -1,0 +1,123 @@
+.backgroundAll {
+    display: flex;
+    height:110%;
+    width: 100%;
+    justify-content: center;
+}
+
+.backgroundProfil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+}
+
+.profilBox{
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
+}
+
+.profilText{
+    font-family: Century Gothic;
+    color: black;
+}
+.profilText >h1{
+    font-size: 3vw;
+}
+
+.profilText >p{
+    font-size: 1vw;
+    line-height: 70%;
+}
+
+.mdpInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+.mdpInput input{
+    width: 75%;
+    height: 100%;
+    color: #adadad;
+    padding-top: 20px;
+    border:none;
+    outline:none;
+    font-size: 15px;
+}
+
+.mdpInput label{
+    position: absolute;
+    bottom: -6px;
+    left: 1px;
+    height: 100%;
+    width: 75%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.mdpInput label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid orange;
+    transition: all 0.5s ease;
+}
+
+.mdpInput input:focus + .mdpLabel .content-name,
+.mdpInput input:valid + .mdpLabel .content-name{
+    color: orange;
+    font-size: 17px;
+    transform: translateY(-60%);
+}
+
+.mdpInput input:focus + .mdpLabel::after,
+.mdpInput input:valid + .mdpLabel::after{
+    width:100%;
+}
+
+.content-name{
+    color: #adadad;
+    position: absolute;
+    bottom: 6px;
+    left: 3px;
+    transition: all 0.3s ease;
+}
+
+.mdpButton{
+    position: relative;
+    width: 45%;
+    height: 50px;
+    bottom: -30px;
+    border:none;
+    background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
+    background-size: 200%;
+    color:white;
+    outline:none;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.mdpButton:hover{
+    background-position: right;
+}

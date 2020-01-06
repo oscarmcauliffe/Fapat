@@ -1,0 +1,9 @@
+.texte h2{
+    text-align: center;
+    font-family: Arial;
+}
+
+.texte p{
+    font-family: Arial;
+    text-align: justify;
+}

@@ -1,0 +1,59 @@
+body {
+    height:100%;
+    background-image: url('../images/avions.jpg');
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.contenu{
+    max-width: 60%;
+    margin: auto;
+    width: 100%;
+}
+
+.section{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: #E8CBC0;
+}
+
+
+.section h3{
+    font-size: 23px;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.section h3:after{
+    content: '\276F';
+    position: absolute;
+    right: 30px;
+    transform: rotate(90deg);
+
+}
+
+.reponse{
+    background-color: rgba(0,0,0,0.1);
+    display: none;
+
+}
+
+.reponse *{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.reponse-inner{
+    padding: 15px;
+
+}
+ 

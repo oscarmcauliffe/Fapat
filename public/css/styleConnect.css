@@ -1,0 +1,135 @@
+.backgroundAll {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+}
+
+.backgroundLeft{
+  background-image: url('../images/LoginAircraft.jpg');
+  position: relative;
+  background-position: 80% 100%;
+  background-repeat: no-repeat;
+  background-size: 1298px 785px;
+  display: flex;
+  height:100%;
+  width:53%;
+  z-index: -1;
+  box-shadow: inset -48px 0px 22px -35px black;
+}
+
+.backgroundRight{
+  height:100%;
+  width:47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Century Gothic;
+  background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+}
+
+.loginBox{
+    background-color: white;
+    display: flex;
+    height: 65%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
+}
+.loginBox h1{
+  display:flex;
+  position: relative;
+  top: -30px;
+  font-weight: bold;
+}
+
+.loginWrite{
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+  font-size: 15px;
+  width: 60%;
+  position: relative;
+  height: 50px;
+  margin: 10px 0px;
+}
+
+.loginWrite input{
+  background-color: inherit;
+  width: 95%;
+  height: 100%;
+  color: #adadad;
+  padding-top: 20px;
+  border:none;
+  outline:none;
+  font-size: 15px;
+}
+
+.loginWrite label{
+  position: absolute;
+  bottom: -6px;
+  left: 1px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.content-name{
+  color: #adadad;
+  position: absolute;
+  bottom: 6px;
+  left: 3px;
+  transition: all 0.3s ease;
+}
+
+.loginWrite label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid orange;
+  transition: all 0.5s ease;
+}
+
+
+.loginWrite input:focus + .label-name .content-name,
+.loginWrite input:valid + .label-name .content-name{
+  color: orange;
+  font-size: 17px;
+  transform: translateY(-60%);
+}
+
+.loginWrite input:focus + .label-name::after,
+.loginWrite input:valid + .label-name::after{
+  width:100%;
+}
+
+.logButton{
+  position: relative;
+  width: 45%;
+  height: 50px;
+  bottom: -30px;
+  border:none;
+  background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
+  background-size: 200%;
+  color:white;
+  outline:none;
+  cursor: pointer;
+  transition: .5s;
+  font-family: Century Gothic;
+  font-weight: bold;
+}
+
+.logButton:hover{
+  background-position: right;
+}

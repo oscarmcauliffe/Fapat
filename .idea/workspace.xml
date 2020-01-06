@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Fapat2.0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/StyleMainAdmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleAPropos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleConditions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleContact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleDocumentation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleFaq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleMain.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styleProfile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Candidats1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Candidats2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/CapSens.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/FAPAT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/LoginAircraft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/LogoProduit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/aircraft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avions.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaultuser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/documentation1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/documentation2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fighterPilot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/hangar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/helicopter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/internet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo infinite measures.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logoInfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logoProfil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logoTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pilote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascript/deroule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascript/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/ChangeLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/OpenSSL License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/ReadMe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/libeay32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/sendmail.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/sendmail.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/source/sendmail.dpr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/source/sendmail.mes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendmail/ssleay32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/aPropos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/ajoutCandidat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/conditions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/documentation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/enTete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/faq.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/mainAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/nousContacter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/piedPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/profil.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1V7UkvPhEb0z1eqW0vy0dYCQHiy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="" />
+      <created>1576603773866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576603773866</updated>
+      <workItem from="1576603777100" duration="9001000" />
+      <workItem from="1576760477413" duration="25727000" />
+      <workItem from="1576960153282" duration="16255000" />
+      <workItem from="1577126822577" duration="361000" />
+      <workItem from="1578084006886" duration="595000" />
+      <workItem from="1578313630507" duration="992000" />
+      <workItem from="1578316175749" duration="276000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576854109569">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1576854109569" />
+    <state x="393" y="11" key="CommitChangelistDialog2" timestamp="1578316465089">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578316465089" />
+    <state x="988" y="343" key="NewPhpFileDialog" timestamp="1576604914209">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="988" y="343" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1576604914209" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1577009359319">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1577009359319" />
+  </component>
+</project>

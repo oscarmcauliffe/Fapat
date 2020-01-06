@@ -1,0 +1,32 @@
+body{
+    height: 100%
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+.contenu{
+    max-width: 70%;
+    margin:auto;
+    
+}
+.section {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-bottom: solid;
+     
+}
+
+img.image {
+    
+    height: 40%;
+    float: right;
+    margin-top: 20%;
+    transform: translate(-50%);
+}
