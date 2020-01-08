@@ -19,7 +19,9 @@
             <h2> Qui sommes nous ? </h2>
             <hr>
             <p>
-            CapSens est une jeune start-up. Forte de 6 personnes aux profils variées et à dominante informatique et éléctronique, CapSens sait se montrer à l'écoute de ses clients pour répondre parfaitement à leurs demande. Tout en restant force de proposition, pour présenter les nouvelles technologies et les adapter aux cahier des charges.
+            CapSens est une jeune start-up. Forte de 6 personnes aux profils variées et à dominante informatique et éléctronique, CapSens sait se montrer à l'écoute de ses clients pour répondre parfaitement à leurs demande. Tout en restant force de proposition, pour présenter les nouvelles technologies et les adapter aux cahier des charges.<br/>
+            N'hésitez pas à nous contacter avec l'onglet en cliquant <h1>ici</h1>
+        
             </p>
         </div>
 
