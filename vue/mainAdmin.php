@@ -19,35 +19,41 @@
             <div class="box">
                 <div class="imgBox">
                     <img src="public/images/test2.jpg">
-                <div class="details">
-                    <div class="content">
-                        <h2>What is Za Warudo ?</h2>
-                        <p>The stand Za Warudo, the world. ZA WARUUUUDO TOKY WA TOMARUUU</p>
+                    <div class="details">
+                        <div class="content"
+                             <ul>
+                                 <li>
+                                    <a href="index.php?action=#">Consulter le test</a>
+                                 </li>
+                                 <li>
+                                    <a href="index.php?action=#">Modifier le test</a>
+                                 </li>
+                             </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
             <div class="box">
                 <div class="imgBox">
                     <img src="public/images/documentation1.jpg">
-                <div class="details">
-                    <div class="content">
-                        <h2>What is Za Warudo ?</h2>
-                        <p>The stand Za Warudo, the world. ZA WARUUUUDO TOKY WA TOMARUUU</p>
-                    </div>
+                     <div class="details">
+                        <div class="content">
+                        <a href="index.php?action=#">Modifier la documentation</a>
+                        <a href="index.php?action=#">Modifier les statistiques</a>
+                        </div>
+                  </div>
                 </div>
-            </div>
             </div>
             <div class="box">
                 <div class="imgBox">
                     <img src="public/images/Candidats1.jpg">
-                <div class="details">
-                    <div class="content">
-                        <h2>What is Za Warudo ?</h2>
-                        <a href="index.php?action=ajoutCandidat">Ajouter Candidats</a>
-                    </div>
+                     <div class="details">
+                         <div class="content">
+                         <a href="index.php?action=#">Modifier un profil</a>
+                         <a href="index.php?action=ajoutCandidat">Ajouter Candidats</a>
+                        </div>
+                     </div>
                 </div>
-            </div>
             </div>
         </div>
     
