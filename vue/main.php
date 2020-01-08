@@ -36,7 +36,7 @@
                 }
                 ?>
                 <div class="corps">
-                    <a>Documentation</a>
+                    <a href="documentation.php">Documentation</a>
                     <a>Statistiques</a>
                 </div>
             </div>
