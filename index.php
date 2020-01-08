@@ -54,6 +54,9 @@ if (isset($_GET['action'])){
             break;
         case 'addUser':
             addUser($_POST['nom'],$_POST['prenom'],$_POST['email'],$_POST['dateDeNaissance']);
+        case 'quiSommesNous':
+            quiSommesNous();
+            break;
         default:
             main();
     }

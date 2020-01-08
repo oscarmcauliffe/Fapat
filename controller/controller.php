@@ -30,6 +30,9 @@ function nousContacter(){
 function aPropos(){
     require('vue/aPropos.php');
 }
+function quiSommesNous(){
+    require('vue/quiSommesNous.php');
+}
 
 function conditions(){
     require('vue/conditions.php');

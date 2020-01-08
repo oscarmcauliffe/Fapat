@@ -19,7 +19,7 @@
                  echo "<li><a class =\"animated\" href =\"index.php?action=profil\">Profil</a></li>";
              }
              ?>
-             <li><a class ="animated" href ="#">Qui sommes-nous ?</a></li>
+             <li><a class ="animated" href ="index.php?action=quiSommesNous">Qui sommes-nous ?</a></li>
              <li><a class ="animated" href ="index.php?action=faq">FAQ</a></li>
              <li><a class ="animated" href ="index.php?action=documentation">Documentation</a></li>
              <li><a class ="animated" href ="#">Aide</a></li>
