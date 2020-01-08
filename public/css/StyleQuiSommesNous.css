@@ -7,10 +7,12 @@
     font-family: Arial;
     text-align: justify;
 }
-.a{
+.texte p > a{
     text-decoration: none;
     color: blue;
 }
-.a : hover{
+.texte p > a : hover{
     text-decoration: underline;
+    color: blue;
+    
 }

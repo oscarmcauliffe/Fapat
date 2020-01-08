@@ -8,7 +8,7 @@
         <link rel="stylesheet"
               href="public/css/styleMain.css">
         <link rel="stylesheet"
-              href="public/css/styleAPropos.css">
+              href="public/css/styleQuiSommesNous.css">
     </head>
     <body>
         <?php
@@ -20,9 +20,8 @@
             <hr>
             <p>
             CapSens est une jeune start-up. Forte de 6 personnes aux profils variées et à dominante informatique et éléctronique, CapSens sait se montrer à l'écoute de ses clients pour répondre parfaitement à leurs demande. Tout en restant force de proposition, pour présenter les nouvelles technologies et les adapter aux cahier des charges.<br/>
-            N'hésitez pas à nous contacter avec l'onglet en cliquant <h1>ici</h1>
-        
-            </p>
+            N'hésitez pas à nous contacter avec l'onglet en cliquant <a href="index.php?action=nousContacter">ici</a></p>
+            
         </div>
 
         <?php
