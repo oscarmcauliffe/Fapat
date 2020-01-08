@@ -36,7 +36,7 @@
                 }
                 ?>
                 <div class="corps">
-                    <a>Documentation</a>
+                    <a href="index.php?action=documentation">Documentation</a>
                     <a>Statistiques</a>
                 </div>
             </div>

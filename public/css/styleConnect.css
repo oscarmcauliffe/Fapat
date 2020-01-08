@@ -45,6 +45,7 @@
   position: relative;
   top: -30px;
   font-weight: bold;
+  font-size: 28px;
 }
 
 .loginWrite{
@@ -55,8 +56,7 @@
   position: relative;
   bottom: 10px;
   font-size: 15px;
-  width: 60%;
-  position: relative;
+  width: 90%;
   height: 50px;
   margin: 10px 0px;
 }
@@ -116,9 +116,10 @@
 
 .logButton{
   position: relative;
-  width: 45%;
-  height: 50px;
-  bottom: -30px;
+  width: 55%;
+  height: 45px;
+  bottom: -25px;
+  left: 17%;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
   background-size: 200%;
@@ -131,5 +132,5 @@
 }
 
 .logButton:hover{
-  background-position: right;
+  background-position: bottom;
 }
