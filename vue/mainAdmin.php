@@ -18,17 +18,17 @@
         <div class="container">
             <div class="box">
                 <div class="imgBox">
-                    <img src="public/images/test2.jpg">
+                    <img src="public/images/Test2.jpg">
                     <div class="details">
-                        <div class="content"
-                             <ul>
-                                 <li>
-                                    <a href="index.php?action=#">Consulter le test</a>
-                                 </li>
-                                 <li>
-                                    <a href="index.php?action=#">Modifier le test</a>
-                                 </li>
-                             </ul>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a class="boutonOption" href="index.php?action=#">Ajouter un profil</a>
+                                </li>
+                                <li>
+                                    <a class="boutonOption"  href="index.php?action=#">Modifier un profil</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -38,10 +38,16 @@
                     <img src="public/images/documentation1.jpg">
                      <div class="details">
                         <div class="content">
-                        <a href="index.php?action=#">Modifier la documentation</a>
-                        <a href="index.php?action=#">Modifier les statistiques</a>
+                            <ul>
+                                <li>
+                                    <a class="boutonOption"  href="index.php?action=#">Modifier la documentation</a>
+                                </li>
+                                <li>
+                                    <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
+                                </li>
+                            </ul>
                         </div>
-                  </div>
+                     </div>
                 </div>
             </div>
             <div class="box">
@@ -49,8 +55,14 @@
                     <img src="public/images/Candidats1.jpg">
                      <div class="details">
                          <div class="content">
-                         <a href="index.php?action=#">Modifier un profil</a>
-                         <a href="index.php?action=ajoutCandidat">Ajouter Candidats</a>
+                             <ul>
+                                 <li>
+                                     <a   href="index.php?action=#">Ajouter un profil</a>
+                                 </li>
+                                 <li>
+                                     <a   href="index.php?action=#">Modifier un profil</a>
+                                 </li>
+                             </ul>
                         </div>
                      </div>
                 </div>

@@ -60,20 +60,24 @@
     color: #fff;
 }
 
-.container .box .details .content h2
-{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: #ff0;
-}
-.container .box .details .content p
-{
-    margin: 10px 0 0;
-    padding: 0;
-}
-
-.container .box .details .content ul
+ul>li
 {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* les couleurs des boutons sont modulables */
+.content a:link, a:visited {
+    background-color: white;
+    color:black;
+    border-style:solid;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content a:hover {
+    background-color: black;
+    color:white;
 }
