@@ -102,7 +102,7 @@ body {
 
 
 .animated:hover{
-    color: red;
+    color: #ff8533;
 }
 
 .animated::after{
@@ -110,7 +110,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: red;
+    background: #ff8533;
     transition:all .5s;
 }
 
@@ -193,6 +193,7 @@ body {
     border-color: orange;
     border-radius: 10px;
     width: 200px;
+    transform: scale(1);
 }
 
 .corps > a:hover {
@@ -203,6 +204,8 @@ body {
     border-radius: 12px;
     border-style: solid;
     border-color: orange;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
 }
 
 /*--------Pied de Page--------*/
