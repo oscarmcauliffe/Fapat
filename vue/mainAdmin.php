@@ -23,10 +23,10 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <a class="boutonOption" href="index.php?action=#">Ajouter un profil</a>
+                                    <a class="boutonOption" href="index.php?action=#">Consulter le test</a>
                                 </li>
                                 <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Modifier un profil</a>
+                                    <a class="boutonOption"  href="index.php?action=#">Modifier le test</a>
                                 </li>
                             </ul>
                         </div>
