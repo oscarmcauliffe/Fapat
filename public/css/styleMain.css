@@ -33,6 +33,8 @@ body {
     width: 20%;
 }
 
+/* En-tête*/
+
 .entete{
     display: flex;
     height: 12%;
