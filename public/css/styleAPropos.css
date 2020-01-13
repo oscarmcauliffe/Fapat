@@ -1,3 +1,12 @@
+.texte{
+<<<<<<< HEAD
+    height: 100%;
+}
+=======
+  height: 100%;
+}
+
+>>>>>>> 8cf8b09869b8a39dbd5ffb03e9b4c5cbd2d30a04
 .texte h2{
     text-align: center;
     font-family: Arial;

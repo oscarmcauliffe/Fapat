@@ -39,6 +39,9 @@ if (isset($_GET['action'])){
         case 'faq':
             faq();
             break;
+        case 'faqAdmin':
+            faqAdmin();
+            break;
         case 'documentation':
             documentation();
             break;

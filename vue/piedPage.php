@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <div class="footer" style=" bottom: 0;">
   <div class="textFooterBox">
     <div class="linkFooter1">
