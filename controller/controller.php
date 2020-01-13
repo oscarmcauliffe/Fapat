@@ -45,6 +45,9 @@ function faq(){
 function documentation(){
     require('vue/documentation.php');
 }
+function faqAdmin(){
+    require ('vue/faqAdmin.php');
+}
 
 function logOut(){
     unset($_SESSION['logged']);

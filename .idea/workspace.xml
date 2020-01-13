@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/StyleMainAdmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/StyleMainAdmin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/mainAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/mainAdmin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
       <workItem from="1578660415512" duration="4000" />
       <workItem from="1578660432738" duration="11000" />
       <workItem from="1578660465866" duration="7000" />
-      <workItem from="1578921470608" duration="1757000" />
+      <workItem from="1578921470608" duration="2094000" />
     </task>
     <task id="LOCAL-00001" summary="page admin avec lien (sans style)">
       <created>1578474916708</created>
@@ -101,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578478724003</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update page admin 2.0">
+      <created>1578923375036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578923375037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,17 +119,18 @@
     <MESSAGE value="page admin avec lien (sans style)" />
     <MESSAGE value="Style de la page admin finis" />
     <MESSAGE value="update page admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="update page admin" />
+    <MESSAGE value="update page admin 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="update page admin 2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576854109569">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1576854109569" />
-    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1578478723521">
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1578923373852">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578478723521" />
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578923373852" />
     <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578316465089" />
     <state x="421" y="84" key="FileChooserDialogImpl" timestamp="1578921836278">
       <screen x="0" y="0" width="1280" height="680" />
@@ -131,10 +140,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="988" y="343" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1576604914209" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1578478725657">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1578923377533">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578478725657" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578923377533" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1578473641062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

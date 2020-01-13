@@ -41,7 +41,7 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Modifier la FAQS</a>
+                                    <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
                                 </li>
                                 <li>
                                     <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
