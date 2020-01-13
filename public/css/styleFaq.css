@@ -1,15 +1,11 @@
-body {
-    height:100%;
-    background-image: url('../images/avions.jpg');
-}
-
-
-
 h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: 40px;
-    margin: 30px;
+    margin: 0px;
+    padding: 30px;
+    padding-bottom: 40px;
+
 }
 
 .contenu{
@@ -21,7 +17,7 @@ h1 {
 .section{
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color: #E8CBC0;
+    background-color: white;
 }
 
 
@@ -56,4 +52,3 @@ h1 {
     padding: 15px;
 
 }
- 
