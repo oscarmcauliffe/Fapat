@@ -15,8 +15,12 @@
         <div class ="background" style="background-image:url('public/images/fighterPilot.jpg');">
             <div class="bodyContent">
                 <div class = "textContent">
-                    <p>Fighting Aircraft Pilot</p>
-                    <p> Aptitude Test</p>
+                    <div class="titleContent">
+                        <p>Projet F.A.P.A.T</p>
+                    </div>
+                    <div class="hiddenText">
+                        <p>Fighting Aircraft Pilot Aptitude Test</p>
+                    </div>
                 </div>
                 <?php
                 if (isset($_SESSION['logged'])==true){
@@ -35,9 +39,14 @@
                 </div>";
                 }
                 ?>
-                <div class="corps">
-                    <a href="index.php?action=documentation">Documentation</a>
-                    <a>Statistiques</a>
+                <div class="buttonUnder">
+
+                    <div class="corps">
+                      <a href="index.php?action=documentation">Documentation</a>
+                    </div>
+                    <div class="corps">
+                      <a>Statistiques</a>
+                    </div>
                 </div>
             </div>
         </div>
