@@ -15,7 +15,7 @@
         include ('enTete.php');
         ?>
 
-        <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+        <div class="texte" style="width: 100%; display: block; margin-left: auto; margin-right: auto;">
             <h2>A Propos</h2>
             <hr>
             <p>

@@ -6,7 +6,6 @@ require('model/model.php');
 function main(){
     require('vue/main.php');
 }
-
 function connect(){
     require('vue/connect.php');
 }
@@ -44,6 +43,9 @@ function faq(){
 
 function documentation(){
     require('vue/documentation.php');
+}
+function faqAdmin(){
+    require ('vue/faqAdmin.php');
 }
 
 function logOut(){

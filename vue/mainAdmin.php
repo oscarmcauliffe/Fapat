@@ -5,6 +5,7 @@
         Test FAPAT (Fr)
     </title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1, maximum-scale=1, user-scalable=1" />
     <link rel="stylesheet"
           href="public/css/StyleMain.css">
     <link rel="stylesheet"
@@ -23,10 +24,10 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <a class="boutonOption" href="index.php?action=#">Consulter le test</a>
+                                    <a class="boutonOption" href="index.php?action=#">Modifier le test</a>
                                 </li>
                                 <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Modifier le test</a>
+                                    <a class="boutonOption"  href="index.php?action=#">Consulter le test</a>
                                 </li>
                             </ul>
                         </div>
@@ -40,7 +41,7 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Modifier la documentation</a>
+                                    <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
                                 </li>
                                 <li>
                                     <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
