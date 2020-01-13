@@ -208,7 +208,6 @@ body {
 }
 
 /*--------Pied de Page--------*/
-
 .footer {
     display: flex;
     height:40%;
@@ -312,3 +311,4 @@ body {
     text-align: center;
     font-size: 15px;
 }
+

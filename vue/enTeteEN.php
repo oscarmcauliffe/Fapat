@@ -19,10 +19,10 @@
                  echo "<li><a class =\"animated\" href =\"index.php?action=profil\">Profil</a></li>";
              }
              ?>
-             <li><a class ="animated" href ="index.php?action=quiSommesNous">Qui sommes-nous ?</a></li>
+             <li><a class ="animated" href ="index.php?action=quiSommesNous">Who are we ?</a></li>
              <li><a class ="animated" href ="index.php?action=faq">FAQ</a></li>
              <li><a class ="animated" href ="index.php?action=documentation">Documentation</a></li>
-             <li><a class ="animated" href ="#">Aide</a></li>
+             <li><a class ="animated" href ="#">Help</a></li>
              <?php
              if(isset($_SESSION['logged'])==true){
                  echo "<li><a class =\"animated\" href =\"index.php?action=logOut\">Déconnexion</a></li>";
@@ -54,8 +54,8 @@
                      $urlEn = substr($urlFr, 0, -4);
                      $urlEn .= "mainEN.php";
 
-                     echo ("<a href=\"".$urlFr."\">Francais (FR)</a>");
-                     echo ("<a href=\"".$urlEn."\">English (EN)</a>");
+                     echo ("<a href=\"index.php?action=main".$urlFr."\">Francais (FR)</a>");
+                     echo ("<a href=\"index.php?action=mainEN".$urlEn."\">English (EN)</a>");
                  }
                  ?>
              </div>

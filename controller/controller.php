@@ -6,7 +6,6 @@ require('model/model.php');
 function main(){
     require('vue/main.php');
 }
-
 function connect(){
     require('vue/connect.php');
 }
