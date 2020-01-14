@@ -58,7 +58,7 @@
                          <div class="content">
                              <ul>
                                  <li>
-                                     <a   href="index.php?action=#">Ajouter un profil</a>
+                                     <a   href="index.php?action=ajoutCandidat">Ajouter un profil</a>
                                  </li>
                                  <li>
                                      <a   href="index.php?action=#">Modifier un profil</a>

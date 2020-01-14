@@ -24,6 +24,7 @@ if (isset($_GET['action'])){
             profil();
             break;
         case 'mainAdmin':
+            accessIfLogged();
             accessIfAdmin();
             mainAdmin();
             break;

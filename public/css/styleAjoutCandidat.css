@@ -1,0 +1,190 @@
+.tableCandidat{
+    table-layout: auto;
+    width: 100%;
+    line-height: 3;
+    font-family: "Century Gothic";
+    font-size: 1vw;
+    border-collapse: collapse;
+}
+
+.tableCandidat td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tableCandidat tr:nth-child(even){
+    background-color: #cccccc;
+}
+
+.tableCandidat tr:nth-child(odd){
+    background-color: white;
+}
+
+.backgroundAjout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundLeftAjout{
+    padding: 5px;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundRightAjout{
+    font-family: "Century Gothic";
+    background-image: linear-gradient(150deg,#636FA4,#E8CBC0);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBoxAJ{
+     background-color: white;
+     display: flex;
+     height: 65%;
+     width: 70%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border:none;
+     box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
+ }
+
+.loginBoxAJ h1{
+    display:flex;
+    position: relative;
+    top: -30px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.loginWriteAJ{
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    font-size: 1.3vw;
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+.loginWriteAJ input{
+    background-color: inherit;
+    width: 95%;
+    height: 100%;
+    color: #adadad;
+    padding-top: 20px;
+    border:none;
+    outline:none;
+}
+
+.loginWriteAJ label{
+    position: absolute;
+    bottom: -6px;
+    left: 1px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.content-nameAJ{
+    color: #adadad;
+    position: absolute;
+    bottom: 6px;
+    left: 3px;
+    transition: all 0.3s ease;
+}
+
+.loginWriteAJ label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid orange;
+    transition: all 0.5s ease;
+}
+
+
+.loginWriteAJ input:focus + .label-nameAJ .content-nameAJ,
+.loginWriteAJ input:valid + .label-nameAJ .content-nameAJ{
+    color: orange;
+    font-size: 1.5vw;
+    transform: translateY(-60%);
+}
+
+.loginWriteAJ input:focus + .label-nameAJ::after,
+.loginWriteAJ input:valid + .label-nameAJ::after{
+    width:100%;
+}
+
+.logButtonAJ{
+    position: relative;
+    width: 55%;
+    height: 45px;
+    bottom: -25px;
+    left: 17%;
+    border:none;
+    background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
+    background-size: 200%;
+    color:white;
+    outline:none;
+    cursor: pointer;
+    transition: .5s;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.logButtonAJ:hover{
+    background-position: bottom;
+}
+/*---------------------------------------------------------*/
+@media screen and (max-width:800px){
+    .footer{
+        top: 20%;
+    }
+
+    .loginWriteAJ{
+        font-size: 2vw;
+    }
+
+    .loginWriteAJ input:focus + .label-nameAJ .content-nameAJ,
+    .loginWriteAJ input:valid + .label-nameAJ .content-nameAJ{
+        font-size: 3vw;
+    }
+
+    .tableCandidat{
+        width: 100%;
+    }
+
+    .backgroundAjout {
+        width: 100%;
+        display: block;
+    }
+
+    .backgroundLeftAjout{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backgroundRightAjout{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
