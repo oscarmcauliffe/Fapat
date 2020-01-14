@@ -69,6 +69,7 @@
     justify-items:center; 
 }
 .fondTexte{
+    margin: 50px;
     background-color: white;
     height: 100%;
     width: 70%;
@@ -86,7 +87,6 @@
         justify-content: space-evenly;
         align-items: center;
         flex-flow: column nowrap;
-
     }
 
     .container .imgBox{
