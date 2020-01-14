@@ -85,4 +85,19 @@ function addUser($nom,$prenom,$email,$date){
     mail($to, $subject, $message);
 }
 
+function showFAQ(){
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
+    
+    $rep = $db->query("SELECT * FROM faq");
+        
+    while($row = $rep->fetch()) :
+            //$id = $row['id'];
+            $question = $row['question'];
+            echo $question;
+            $reponse = $row['reponse'];
+            echo $reponse;
+    endwhile;
+     
+}
+
 ?>
