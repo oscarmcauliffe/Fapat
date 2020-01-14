@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/styleAjoutCandidat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styleConnect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styleMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/ajoutCandidat.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/ajoutCandidat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/benoit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/benoit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gabrielle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/gabrielle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/oscar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/oscar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sean.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sean.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/thomas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/thomas.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/enTete.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/enTete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/enTeteEN.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/mainAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/mainAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/mainEN.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/piedPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/piedPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fapat2.0 - Backup 8.1.20" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/TD test" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -118,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578923375037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reparation taille fond de qui somme nous">
+      <created>1579019895468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579019895468</updated>
+    </task>
+    <task id="LOCAL-00007" summary="responsive page quiSommesNous">
+      <created>1579021119254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579021119254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,22 +138,26 @@
     <MESSAGE value="Style de la page admin finis" />
     <MESSAGE value="update page admin" />
     <MESSAGE value="update page admin 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="update page admin 2.0" />
+    <MESSAGE value="reparation taille fond de qui somme nous" />
+    <MESSAGE value="responsive page quiSommesNous" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive page quiSommesNous" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578927236741">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578927236741" />
-    <state x="393" y="11" key="CommitChangelistDialog2" timestamp="1579017613646">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1579021118353">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578923373852" />
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579021118353" />
     <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579017613646" />
-    <state x="486" y="108" key="FileChooserDialogImpl" timestamp="1579017500341">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="405" y="93" key="FileChooserDialogImpl" timestamp="1579020457109">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1578921836278" />
+    <state x="405" y="93" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1579020457109" />
     <state x="486" y="108" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1579017500341" />
     <state x="147" y="66" key="MergeDialog" timestamp="1578927213178">
       <screen x="0" y="0" width="1536" height="834" />
@@ -162,18 +175,20 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.834@0.0.1536.834" timestamp="1578925636136" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1578923377533">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1579021126257">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578923377533" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1579021126257" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1578473641062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1578473641062" />
-    <state x="540" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579017433579">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579021086765">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1578923352687" />
+    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1579021086765" />
     <state x="540" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1579017433579" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1577009359319">
       <screen x="0" y="0" width="1536" height="834" />
