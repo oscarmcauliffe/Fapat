@@ -17,7 +17,7 @@
     <?php
     include ('enTete.php');
     ?>
-    <div class ="background" style="background-image:url('public/images/FondFAQ.jpg');">
+   <!--<div class ="background" style="background-image:url('public/images/FondFAQ.jpg');">-->
     <h1>Questions fréquentes</h1>
     <div class="contenu">
 
