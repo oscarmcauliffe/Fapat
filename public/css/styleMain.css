@@ -48,8 +48,6 @@ body {
 }
 
 
-
-
 .textContent{
     display: flex;
     flex-direction: column;
@@ -100,9 +98,12 @@ body {
     font-family: Candara;
 }
 
+.navbar ul li a:active {
+  background-color: #f1f1f1;
+}
 
 .animated:hover{
-    color: red;
+    color: orange;
 }
 
 .animated::after{
@@ -110,7 +111,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: red;
+    background: orange;
     transition:all .5s;
 }
 
