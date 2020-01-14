@@ -1,6 +1,3 @@
-.texte{
-    height: 100%;
-}
 .texte h2{
     text-align: center;
     font-family: Arial;
@@ -20,42 +17,68 @@
     
 }
 .imagesQuiSommesNous img {
-    position: absolute;
-    width: 20%;
-    height: 30%;
-    top: 40%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
     left: 40%;
 }
-.trombinoscope img {
-    position: absolute;
-    width:45%;
-    height: 30;
-    top: 72%;
-    left: 28%;
+.container{
+    top: 95%;
+    width: 100%;
+    height: 100%;
+    background-color: withe;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.container .trombinoscope{
+    height:  55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
     
 }
+.container .imgBox{
+    width: 10%;
+    height: 90%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white;
+}
+@media screen and(max-width=800px){
+    .container .trombinoscope{
+        display: block;
+        flex-direction: column;
+    }
+}
+.trombinoscope img {
+    max-height: 100%;
+    max-width: 100%;
+}
 .liencontact{
-    position: absolute;
     top: 104%;
     left: 24%;
+
 }
 .fondCouleur{
     height:100%;
     width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: Century Gothic;
     background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+    display: flex;
+    justify-content: center;
+    justify-items:center; 
 }
 .fondTexte{
     background-color: white;
-    display: flex;
     height: 100%;
     width: 70%;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
     align-items: center;
     border:none;
     box-shadow: -20px 45px 40px 3px rgba(0,0,0,0.75);
