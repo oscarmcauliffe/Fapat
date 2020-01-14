@@ -26,7 +26,7 @@
             </div>
             
             <div class="container">
-            <div class="imagesQuiSommesNous"> 
+            <div class="imagesQuiSommesNous">
                 <img src="public/images/quiSommesNous.jpg">
             </div>
                 <div class="trombinoscope">
@@ -35,11 +35,11 @@
                 <p> Gabrielle<br/>CANET</p>
             </div>
             <div class="imgBox">
-                <img src="public/images/sean.jpg">
+               <img src="public/images/sean.jpg">
                 <p> Sean<br/>LIM</p>
             </div>
             <div class="imgBox">
-                <img src="public/images/oscar.jpg">
+               <img src="public/images/oscar.jpg">
                 <p> Oscar<br/>MC AULIFFE</p>
             </div>
             <div class="imgBox">
