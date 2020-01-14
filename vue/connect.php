@@ -21,7 +21,7 @@
             <div class="backgroundRight">
                 <div class="loginBox">
                     <form action="index.php?action=logIn" method="post">
-                        <h1>Se Connecter</h1>
+                        <p>Se Connecter</p>
                         <div class="loginWrite">
                             <input id ="name" type="text" name="username" required>
                             <label for="name" class="label-name">

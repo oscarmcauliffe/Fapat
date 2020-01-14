@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/StyleQuiSommesNous.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/StyleQuiSommesNous.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styleConnect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/benoit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/benoit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gabrielle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/gabrielle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/oscar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/oscar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sean.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sean.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/thomas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/thomas.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/connect.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
