@@ -16,7 +16,7 @@
             <div class="bodyContent">
                 <div class = "textContent">
                     <div class="titleContent">
-                        <p>Projet F.A.P.A.T</p>
+                        <p>F.A.P.A.T</p>
                     </div>
                     <div class="hiddenText">
                         <p>Fighting Aircraft Pilot Aptitude Test</p>
