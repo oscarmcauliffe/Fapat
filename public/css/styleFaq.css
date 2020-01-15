@@ -25,6 +25,7 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     box-shadow: -20px 45px 40px 3px rgba(0,0,0,0.75);
+    margin:50px;
 }
 
 .section{
