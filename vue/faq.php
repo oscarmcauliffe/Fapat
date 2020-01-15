@@ -75,7 +75,7 @@
             <h3>Qui a fait ce merveilleux site ? Je le trouve super beau et aimerait en savoir plus sur ses créateurs.</h3>
             <div class="reponse">
                 <div class="reponse-inner">
-                    <p>Merci du compliment. Cet extraordinaire site a été réalisé par l'entreprise CapSens. <br/> Vous pouvez retrouver plus d'informations dans l'onglet "<a href="index.php?action=quiSommesNous">Qui Sommes-nous ? <a/>" .</p>
+                    <p>Merci du compliment. Cet extraordinaire site a été réalisé par l'entreprise CapSens. <br/> Vous pouvez retrouver plus d'informations dans l'onglet "<a href="index.php?action=quiSommesNous">Qui Sommes-nous ? </a>".</p>
                 </div>
             </div>
         </div>
