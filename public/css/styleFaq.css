@@ -54,17 +54,16 @@ h1 {
 }
 
 .reponse{
-    background-color: rgba(0,0,0,0.1);
     display: none;
-
 }
 
 .reponse *{
     margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 .reponse-inner{
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.1);
     padding: 15px;
 
 }
