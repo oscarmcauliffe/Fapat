@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styleConnect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/enTete.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/enTete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/StyleMainAdmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/StyleMainAdmin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/StyleQuiSommesNous.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/StyleQuiSommesNous.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/mainAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/mainAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/quiSommesNous.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/quiSommesNous.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

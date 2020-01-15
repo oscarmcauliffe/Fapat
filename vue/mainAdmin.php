@@ -22,54 +22,38 @@
                     <img src="public/images/Test2.jpg">
                     <div class="details">
                         <div class="content">
-                            <ul>
-                                <li>
-                                    <a class="boutonOption" href="index.php?action=#">Modifier le test</a>
-                                </li>
-                                <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Consulter le test</a>
-                                </li>
-                            </ul>
+                            <a class="boutonOption" href="index.php?action=#">Modifier le test</a>
+                            <a class="boutonOption"  href="index.php?action=#">Consulter le test</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="imgBox">
                     <img src="public/images/documentation1.jpg">
                      <div class="details">
                         <div class="content">
-                            <ul>
-                                <li>
-                                    <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
-                                </li>
-                                <li>
-                                    <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
-                                </li>
-                            </ul>
+                            <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
+                            <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
                         </div>
                      </div>
                 </div>
             </div>
+
             <div class="box">
                 <div class="imgBox">
                     <img src="public/images/Candidats1.jpg">
                      <div class="details">
                          <div class="content">
-                             <ul>
-                                 <li>
-                                     <a   href="index.php?action=ajoutCandidat">Ajouter un profil</a>
-                                 </li>
-                                 <li>
-                                     <a   href="index.php?action=#">Modifier un profil</a>
-                                 </li>
-                             </ul>
+                             <a class="boutonOption" href="index.php?action=ajoutCandidat">Ajouter un profil</a>
+                             <a class="boutonOption" href="index.php?action=#">Modifier un profil</a>
                         </div>
                      </div>
                 </div>
             </div>
         </div>
-    
+
     <?php
     include('piedPage.php');
     ?>
