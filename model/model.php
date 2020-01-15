@@ -85,4 +85,41 @@ function addUser($nom,$prenom,$email,$date){
     mail($to, $subject, $message);
 }
 
+function showFAQ(){
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
+    
+    $rep = $db->query("SELECT * FROM faq");
+        
+    while($row = $rep->fetch()) :
+            //$id = $row['id'];
+            $question = $row['question'];
+            echo $question;
+            $reponse = $row['reponse'];
+            echo $reponse;
+    endwhile;
+     
+}
+
+function addFaq($question,$reponse){
+               
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat','root',''); 
+$pdoStat = $objPdo->prepare('INSERT INTO faq VALUES (NULL, :question, :reponse)');
+
+
+$pdoStat->bindValue(':question',$_POST['question'],PDO::PARAM_STR);
+$pdoStat->bindValue(':reponse',$_POST['reponse'],PDO::PARAM_STR);
+
+$insertIsOk = $pdoStat->execute();
+
+if($insertIsOk){
+    $message = 'faq ajoutée';
+} else {
+    $message = 'echec';
+}
+    
+header('Location: index.php?action=faqAdmin');
+}
+
+
+
 ?>

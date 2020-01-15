@@ -7,8 +7,7 @@
     <div class="fapatText">
         <img src="public/images/FAPAT.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
-    <div class ="navBar" style="flex-basis: 50%; overflow-y:auto;
-        white-space:nowrap;">
+    <div class ="navBar" style="flex-basis: 50%; white-space:nowrap; overflow: auto">
          <ul>
              <li><a class ="animated" href ="index.php?action=main">Home</a></li>
              <?php
@@ -22,7 +21,6 @@
              <li><a class ="animated" href ="index.php?action=quiSommesNous">Qui sommes-nous ?</a></li>
              <li><a class ="animated" href ="index.php?action=faq">FAQ</a></li>
              <li><a class ="animated" href ="index.php?action=documentation">Documentation</a></li>
-             <li><a class ="animated" href ="#">Aide</a></li>
              <?php
              if(isset($_SESSION['logged'])==true){
                  echo "<li><a class =\"animated\" href =\"index.php?action=logOut\">Déconnexion</a></li>";

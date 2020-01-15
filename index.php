@@ -24,6 +24,7 @@ if (isset($_GET['action'])){
             profil();
             break;
         case 'mainAdmin':
+            accessIfLogged();
             accessIfAdmin();
             mainAdmin();
             break;
@@ -40,6 +41,8 @@ if (isset($_GET['action'])){
             faq();
             break;
         case 'faqAdmin':
+            accessIfLogged();
+            accessIfAdmin();
             faqAdmin();
             break;
         case 'documentation':
@@ -52,6 +55,7 @@ if (isset($_GET['action'])){
             mailContact(htmlentities($_POST['subject']),htmlentities($_POST['name']),htmlentities($_POST['message']),htmlentities($_POST['email']));
             break;
         case 'ajoutCandidat':
+            accessIfLogged();
             accessIfAdmin();
             ajoutCandidat();
             break;
@@ -60,6 +64,15 @@ if (isset($_GET['action'])){
         case 'quiSommesNous':
             quiSommesNous();
             break;
+        case 'addFaq':
+            addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']);
+            break;
+    
+        //case 'faqAdmin' :
+          //  accessIfAdmin();
+        //    faqAdmin();
+          //  break;
+        
         default:
             main();
     }

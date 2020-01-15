@@ -1,6 +1,6 @@
 .backgroundAll {
   display: flex;
-  height: 100%;
+  height: 80%;
   width: 100%;
   justify-content: center;
 }
@@ -30,22 +30,21 @@
 }
 
 .loginBox{
-    background-color: white;
-    display: flex;
-    height: 65%;
-    width: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border:none;
-    box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
+  background-color: white;
+  display: flex;
+  height: 60%;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
 }
 .loginBox h1{
   display:flex;
   position: relative;
   top: -30px;
   font-weight: bold;
-  font-size: 28px;
 }
 
 .loginWrite{
@@ -56,7 +55,8 @@
   position: relative;
   bottom: 10px;
   font-size: 15px;
-  width: 90%;
+  width: 80%;
+  position: relative;
   height: 50px;
   margin: 10px 0px;
 }
@@ -116,10 +116,9 @@
 
 .logButton{
   position: relative;
-  width: 55%;
-  height: 45px;
-  bottom: -25px;
-  left: 17%;
+  width: 90%;
+  height: 50px;
+  bottom: -30px;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
   background-size: 200%;
@@ -132,5 +131,31 @@
 }
 
 .logButton:hover{
-  background-position: bottom;
+  background-position: right;
+}
+
+/*---------------------------------------------------------*/
+@media screen and (max-width:800px){
+  .backgroundAll {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 150%;
+  }
+
+  .backgroundLeft{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .backgroundRight{
+    width: 100%;
+    height: 100%;
+  }
+
+  .loginBox{
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -22,6 +22,10 @@ function ajoutCandidat(){
     require('vue/ajoutCandidat.php');
 }
 
+//function faqAdmin(){
+//  require('vue/faqAdmin.php');
+//}
+
 function nousContacter(){
     require('vue/nousContacter.php');
 }
