@@ -98,8 +98,8 @@ body {
     font-family: Candara;
 }
 
-.navbar ul li a:active {
-  background-color: #f1f1f1;
+.animated:active {
+  color: #f1f1f1;
 }
 
 .animated:hover{
