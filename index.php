@@ -65,14 +65,14 @@ if (isset($_GET['action'])){
             quiSommesNous();
             break;
         case 'addFaq':
-            addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']);
+            addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']));
             break;
-    
+
         //case 'faqAdmin' :
           //  accessIfAdmin();
         //    faqAdmin();
           //  break;
-        
+
         default:
             main();
     }
