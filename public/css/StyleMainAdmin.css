@@ -2,16 +2,13 @@
 /* le contenus du bas n'a rien a voir avec l'en-tete */
 
 .container{
-
-   /* width: 1280px;*/
     width: auto;
     height: 75%;
     background: #fff;
-    /*margin-left:12%;*/
     display:flex;
     flex-flow: row nowrap;
     align-content: center;
-
+    align-items: center;
 }
 
 .container .box{
@@ -20,14 +17,15 @@
     height: fit-content;
     background: #fff;
     margin: 20px;
-    top:25%;
+
     display: flex;
     flex-flow: column nowrap;
-
 }
+
 .container .box .imgBox {
     position: relative;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .container .box .imgBox img
@@ -51,10 +49,10 @@
     transform: scaleY(0);
     transition: transform .5s;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     justify-items: center;
-
+    border-radius: 15px;
 }
 
 .container .box:hover .details{
@@ -66,30 +64,24 @@
     transform: translateY(-50%);
     text-align:center;
     padding: 15px;
-    /*color: #fff;*/
-    background-color: #cc6666;
-
-}
-.container .box .details .content ul {
+    align-items: center;
     display: flex;
-    justify-items: center;
-    justify-content: center;
-}
-
-.container .box .details .content li {
-   display: flex;
     flex-flow: column nowrap;
-    justify-items: center;
+}
+
+.container .box .details .content .boutonOption {
+    display: flex;
+    align-content: center;
+    align-items: center;
     justify-content: center;
-    align-content: space-between;
-
+    justify-items: center;
+    height: fit-content;
+    width: 70%;
+    margin: 15px;
+    font-family: "Century Gothic";
+    border-radius: 15px;
 }
 
-ul>li
-{
-    list-style-type: none;
-    text-align: center;
-}
 /* les couleurs des boutons sont modulables */
 .content a:link, a:visited {
     background-color: white;
@@ -98,10 +90,23 @@ ul>li
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-
 }
 
 .content a:hover {
     background-color: black;
     color:white;
+}
+
+@media screen and (max-width: 800px) {
+     .container{
+         width: 100%;
+         height: fit-content;
+         display: block;
+     }
+
+    .container .box {
+        left: 25%;
+        width: 50%;
+    }
+
 }

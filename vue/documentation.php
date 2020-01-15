@@ -19,12 +19,13 @@
 
       <div class="contenu">
       <h1> Documentation</h1>
-      <h2>En savoir plus sur le Test et les métiers de l'armée de l'air</h2>
+      <h2><i>En savoir plus sur le Test et les métiers de l'armée de l'air</i></h2>
 
           <!-- --------------------------------------------------------------------------  -->
           <div class="section">
               <div class="documentation">
                   <h2>Le Test</h2>
+                  <img src="public/images/helicopter.png" class="image" >
                   <p>Seulement 2,5 à 3% des candidats possèdent un profil psychologique suffisamment équilibré pour résister au stress.<br/>
                       Il est donc primordiale de concevoir une machine pouvant fournir un diagnostique sur les candidats.<br/>
                       Durant leurs tests, lorsqu’ils sont en situation de stress, ils doivent par exemple: <br/>
@@ -51,6 +52,7 @@
               </div>
               <div class="documentation">
                   <h2>Les métiers de l'armée</h2>
+                  <img src="public/images/aircraft.png" class="image" >
                   <p>Seulement 2,5 à 3% des candidats possèdent un profil psychologique suffisamment équilibré pour résister au stress.     <br/>
                       Il est donc primordiale de concevoir une machine pouvant fournir un diagnostique sur les candidats.<br/>
                       Durant leurs tests, lorsqu’ils sont en situation de stress, ils doivent par exemple: <br/>

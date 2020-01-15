@@ -54,6 +54,9 @@ h2{
 
 }
 
+.documentation img{
+    display:none;
+}
 p{
     text-align: justify;
 }
@@ -68,4 +71,24 @@ p{
 img.image {
     width: 80%;
     margin-top: 10%;
+}
+
+@media screen and (max-width: 800px){
+
+    .documentation{
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .documentation img{
+      display: flex;
+      margin: 10%;
+    }
+
+    .photo{
+       display:none;
+    }
+
+
 }

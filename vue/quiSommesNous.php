@@ -11,9 +11,11 @@
               href="public/css/styleQuiSommesNous.css">
     </head>
     <body>
+
         <?php
         include ('enTete.php');
         ?>
+
     <div class="fondCouleur">
         <div class="fondTexte">
             <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
