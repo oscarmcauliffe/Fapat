@@ -65,6 +65,15 @@ if (isset($_GET['action'])){
         case 'quiSommesNous':
             quiSommesNous();
             break;
+        case 'addFaq':
+            addFaq($_POST['question'],$_POST['reponse']);
+            break;
+    
+        //case 'faqAdmin' :
+          //  accessIfAdmin();
+        //    faqAdmin();
+          //  break;
+        
         default:
             main();
     }
