@@ -25,26 +25,16 @@
         
             <h2>Ajouter une nouvelle faq</h2>
             
-            <form action="faqAdmin.php" method="post">
+            
+            <form action="index.php?action=addFaq" method="post">   
             Question : <input type="text" name="question"> <br/>
-                Réponse : <textarea name="reponse"></textarea> <br/>
+            Réponse : <textarea name="reponse"></textarea> <br/>
         
             <input type="submit" name="nouvelle_faq" value="Ajouter la faq">
                 
             </form>
             
-            <?php 
-            $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
-            if($_POST['nouvelle_faq']){
-                $question = strip_tags(mysql_real_escape_string($_POST['question']));
-                $reponse = strip_tags(mysql_real_escape_string($_POST['reponse']));
-                $sql = "INSERT INTO faq (question, reponse) VALUE('".$question."', '".$reponse."')";
-                $res = mysql_query($sql);
-                hearder("Location: faqAdmin.php");
-                exit();
-            }
-            
-            ?>
+
     
         </div>
     
