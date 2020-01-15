@@ -76,8 +76,10 @@ function accessIfLogged(){
 }
 
 function accessIfAdmin(){
-    if(isset($_SESSION['gestion'])==false){
-        header('Location: index.php?action=main');
+    if(isset($_SESSION['logged'])==false){
+        if(isset($_SESSION['gestion'])==false){
+            header('Location: index.php?action=main');
+        }
     }
 }
 

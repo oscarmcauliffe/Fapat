@@ -17,10 +17,10 @@
     <?php
     include ('enTete.php');
     ?>
-   <!--<div class ="background" style="background-image:url('public/images/FondFAQ.jpg');">-->
-    <h1>Questions fréquentes</h1>
-    <div class="contenu">
+    <div class ="background">
 
+    <div class="contenu">
+    <h1>Questions fréquentes</h1>
         <!-- à rép pour chaque question-->
         <div class="section">
             <h3>Combien de fois puis-je passer le test ? </h3>
@@ -60,14 +60,6 @@
         </div>
 
         <!-- -->
-        <div class="section">
-            <h3>Questions 2:</h3>
-            <div class="reponse">
-                <div class="reponse-inner">
-                    <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.</p>
-                </div>
-            </div>
-        </div>
 
         <div class="section">
             <h3>Questions 2:</h3>
@@ -96,9 +88,8 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
   </div>
     <?php
     include('piedPage.php');

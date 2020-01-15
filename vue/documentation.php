@@ -14,7 +14,8 @@
     <?php
     include ('enTete.php');
     ?>
-    <h1>En savoir plus sur les métiers de l'armée de l'air</h1>
+    <h1> Documentation</h1>
+    <h2>En savoir plus sur les métiers de l'armée de l'air</h2>
     <div class="contenu">
         <!-- --------------------------------------------------------------------------  -->
         <div class="section">

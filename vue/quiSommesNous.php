@@ -24,7 +24,7 @@
                 Nos expériences personnelles nous ont permis de nous concentrer autour des 3 pilliers ci dessous
                 </p>
             </div>
-            
+
             <div class="container">
             <div class="imagesQuiSommesNous">
                 <img src="public/images/quiSommesNous.jpg">
@@ -56,12 +56,12 @@
             </div>
             </div>
             <div class=liencontact>
-            <p>N'hésitez pas à nous contacter avec l'onglet en cliquant <a href="index.php?action=nousContacter">ici</a></p>
+            <p>N'hésitez pas à nous contacter via l'onglet "Nous Contacter" ou en cliquant <a href="index.php?action=nousContacter">ici</a></p>
             </div>
             </div>
         </div>
         </div>
-        
+
         <?php
             include ('piedPage.php');
         ?>
