@@ -29,6 +29,12 @@
   background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
 }
 
+.loginBox form{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 .loginBox{
     background-color: white;
     display: flex;
@@ -41,12 +47,10 @@
     box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
 }
 .loginBox p{
-  font-size: 3vw;
   display:flex;
   position: relative;
-  top: -30px;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2vw;
 }
 
 .loginWrite{
@@ -116,8 +120,7 @@
 }
 
 .logButton{
-  position: relative;
-  width: fit-content;
+  width: 80%;
   height: 45px;
   bottom: -25px;
   left: 17%;
@@ -135,4 +138,29 @@
 
 .logButton:hover{
   background-position: bottom;
+}
+
+/*---------------------------------------------------------*/
+@media screen and (max-width:800px){
+  .backgroundAll {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .backgroundLeft{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .backgroundRight{
+    width: 100%;
+
+  }
+
+  .loginBox{
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+  }
 }

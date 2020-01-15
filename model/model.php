@@ -100,4 +100,26 @@ function showFAQ(){
      
 }
 
+function addFaq($question,$reponse){
+               
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat','root',''); 
+$pdoStat = $objPdo->prepare('INSERT INTO faq VALUES (NULL, :question, :reponse)');
+
+
+$pdoStat->bindValue(':question',$_POST['question'],PDO::PARAM_STR);
+$pdoStat->bindValue(':reponse',$_POST['reponse'],PDO::PARAM_STR);
+
+$insertIsOk = $pdoStat->execute();
+
+if($insertIsOk){
+    $message = 'faq ajoutée';
+} else {
+    $message = 'echec';
+}
+    
+header('Location: index.php?action=faqAdmin');
+}
+
+
+
 ?>
