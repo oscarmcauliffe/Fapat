@@ -60,7 +60,8 @@ body {
 }
 
 .textContent > p{
-    font-family: Candara;
+    font-family: "Monserrat",sans-serif;
+    font-weight: uppercase;
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -312,4 +313,3 @@ body {
     text-align: center;
     font-size: 15px;
 }
-

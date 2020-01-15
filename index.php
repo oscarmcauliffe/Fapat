@@ -14,7 +14,7 @@ if (isset($_GET['action'])){
             connect();
             break;
         case 'logIn':
-            logIn($_POST['username'],$_POST['password']);
+            logIn(htmlentitie($_POST['username']),htmlentities($_POST['password']));
             break;
         case 'logOut':
             logOut();
@@ -46,17 +46,17 @@ if (isset($_GET['action'])){
             documentation();
             break;
         case 'nouveauMdp':
-            newPassword($_POST['oldPassword'],$_POST['newPassword'],$_POST['newPassword2']);
+            newPassword(htmlentities($_POST['oldPassword']),htmlentities($_POST['newPassword']),htmlentities($_POST['newPassword2']));
             break;
         case 'mailContact':
-            mailContact($_POST['subject'],$_POST['name'],$_POST['message'],$_POST['email']);
+            mailContact(htmlentities($_POST['subject']),htmlentities($_POST['name']),htmlentities($_POST['message']),htmlentities($_POST['email']));
             break;
         case 'ajoutCandidat':
             accessIfAdmin();
             ajoutCandidat();
             break;
         case 'addUser':
-            addUser($_POST['nom'],$_POST['prenom'],$_POST['email'],$_POST['dateDeNaissance']);
+            addUser(htmlentities($_POST['nom']),htmlentities($_POST['prenom']),htmlentities($_POST['email']),htmlentities($_POST['dateDeNaissance']));
         case 'quiSommesNous':
             quiSommesNous();
             break;
