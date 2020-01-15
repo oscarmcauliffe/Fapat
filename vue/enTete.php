@@ -21,7 +21,6 @@
              <li><a class ="animated" href ="index.php?action=quiSommesNous">Qui sommes-nous ?</a></li>
              <li><a class ="animated" href ="index.php?action=faq">FAQ</a></li>
              <li><a class ="animated" href ="index.php?action=documentation">Documentation</a></li>
-             <li><a class ="animated" href ="#">Aide</a></li>
              <?php
              if(isset($_SESSION['logged'])==true){
                  echo "<li><a class =\"animated\" href =\"index.php?action=logOut\">Déconnexion</a></li>";

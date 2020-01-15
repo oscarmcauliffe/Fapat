@@ -41,6 +41,8 @@ if (isset($_GET['action'])){
             faq();
             break;
         case 'faqAdmin':
+            accessIfLogged();
+            accessIfAdmin();
             faqAdmin();
             break;
         case 'documentation':
@@ -53,6 +55,7 @@ if (isset($_GET['action'])){
             mailContact($_POST['subject'],$_POST['name'],$_POST['message'],$_POST['email']);
             break;
         case 'ajoutCandidat':
+            accessIfLogged();
             accessIfAdmin();
             ajoutCandidat();
             break;
