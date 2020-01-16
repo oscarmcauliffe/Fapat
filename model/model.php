@@ -86,7 +86,7 @@ function addUser($nom,$prenom,$email,$date){
 }
 
 function showFAQ(){
-    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=fapat;charset=utf8", "root", "");
     
     $rep = $db->query("SELECT * FROM faq");
         

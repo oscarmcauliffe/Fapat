@@ -14,7 +14,7 @@ if (isset($_GET['action'])){
             connect();
             break;
         case 'logIn':
-            logIn(htmlentitie($_POST['username']),htmlentities($_POST['password']));
+            logIn(htmlentities($_POST['username']),htmlentities($_POST['password']));
             break;
         case 'logOut':
             logOut();
