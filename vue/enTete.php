@@ -7,7 +7,7 @@
     <div class="fapatText">
         <img src="public/images/FAPAT.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
-    <div class ="navBar" style="flex-basis: 50%; white-space:nowrap; overflow: auto">
+    <div class ="navBar" style="flex-basis: 50%;">
          <ul>
              <li><a class ="animated" href ="index.php?action=main">Home</a></li>
              <?php
