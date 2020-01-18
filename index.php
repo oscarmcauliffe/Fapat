@@ -67,6 +67,10 @@ if (isset($_GET['action'])){
         case 'addFaq':
             addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']));
             break;
+        
+        case 'suppFaq' :
+            suppFaq();
+            break;
 
         //case 'faqAdmin' :
           //  accessIfAdmin();

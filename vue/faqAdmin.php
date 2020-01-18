@@ -39,9 +39,12 @@ $faqs=$pdoStat->fetchAll();
                 <div class="modifFaq">
                     <h2>Ajouter une nouvelle faq</h2>
             
-                    <form action="index.php?action=addFaq" method="post">   
-                    Question : <input type="text" name="question"> <br/>
-                    Réponse : <textarea name="reponse"></textarea> <br/>
+                    <form action="index.php?action=addFaq" method="post">
+                        <label for="question">Question :</label>
+                        <input type="text" name="question"> <br> <br>
+                        
+                        <label for="reponse">Réponse :</label>
+                        <textarea name="reponse"></textarea> <br/>
         
                     <input type="submit" name="nouvelle_faq" value="Ajouter la faq">
                 
@@ -50,16 +53,27 @@ $faqs=$pdoStat->fetchAll();
                 </div>
 
     
-                <h1>Questions fréquentes</h1>  
+                <h2>Apperçu de la FAQ :</h2>  
                 <?php foreach ($faqs as $faq):  ?>
                 <div class="section">
                    <h3><?= $faq['question'] ?></h3>
                      <div class="reponse">
                          <div class="reponse-inner">
                              <p><?= $faq['reponse'] ?> </p>
+                            
                          </div>
-                    </div>
+                    </div> <!--faq=<?//= $faq['id']?>-->
                 </div>
+                
+                
+                <div class="modif"> 
+                    <a href="index.php?action=suppFaq&id=<?= $faq['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cette FAQ ?');">Supprimer le FAQ</a> 
+                    
+                
+                    <a href="modifier.php?id=<?= $faq['id']?>" >Modifier la FAQ</a>
+
+                </div> <br>
+       
                 <?php endforeach ?>
                 
 
