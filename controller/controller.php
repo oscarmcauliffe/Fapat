@@ -45,6 +45,11 @@ function faq(){
 function documentation(){
     require('vue/documentation.php');
 }
+
+function statistique(){
+  require('vue/statistique.php');
+}
+
 function faqAdmin(){
     require ('vue/faqAdmin.php');
 }
@@ -136,4 +141,6 @@ function validMail(){
 
 
 
+
 ?>
+

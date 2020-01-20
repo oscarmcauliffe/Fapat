@@ -114,11 +114,22 @@
   width:100%;
 }
 
+.buttonBox{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  top: 15%;
+}
+
 .logButton{
-  position: relative;
-  width: 90%;
-  height: 50px;
-  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 50%;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
   background-size: 200%;
@@ -126,13 +137,14 @@
   outline:none;
   cursor: pointer;
   transition: .5s;
-  font-family: Century Gothic;
-  font-weight: bold;
+  font-family: "Century Gothic";
 }
 
 .logButton:hover{
   background-position: right;
 }
+
+
 
 /*---------------------------------------------------------*/
 @media screen and (max-width:800px){
