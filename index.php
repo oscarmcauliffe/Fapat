@@ -48,6 +48,9 @@ if (isset($_GET['action'])){
         case 'documentation':
             documentation();
             break;
+        case 'statistique':
+            statistique();
+          break;
         case 'nouveauMdp':
             newPassword(htmlentities($_POST['oldPassword']),htmlentities($_POST['newPassword']),htmlentities($_POST['newPassword2']));
             break;
@@ -67,7 +70,7 @@ if (isset($_GET['action'])){
         case 'addFaq':
             addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']));
             break;
-        
+
         case 'suppFaq' :
             suppFaq();
             break;

@@ -37,8 +37,8 @@ include ('enTete.php');
         }
         ?>
         <div class="corps">
-            <a>Documentation</a>
-            <a>Statistiques</a>
+            <a href ="index.php?action=documentation">Documentation</a>
+            <a href="index.php?action=statistique">Statistiques</a>
         </div>
     </div>
 </div>
