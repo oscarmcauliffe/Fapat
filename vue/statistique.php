@@ -23,6 +23,7 @@
 
     <div class="statBackground" id="stat">
       <h1 id="title">STATISTIQUES</h1>
+
       <div class="statBox">
         <div class="graphBox">
           <canvas id="stat1"></canvas>
@@ -46,24 +47,23 @@
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>test</td>
-                      <td>test</td>
-                      <td>Max</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Lim</td>
-                      <td>Sean</td>
-                      <td>914</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>dmzda</td>
-                      <td>fzafa</td>
-                      <td>910</td>
-                    </tr>
+
+                    <?php
+                    $conn = new mysqli("localhost","root","","fapat");
+                    $sql = "SELECT rang,score,nom,prenom FROM users NATURAL JOIN stats";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                      echo "<tr><td>" . $row["rang"]. "</td><td>" . $row["nom"].
+                       "</td><td>" . $row["prenom"]. "</td><td>" . $row["score"]. "</td></tr>";
+                    }
+                    } else {
+                    echo "0 results";
+                    }
+                    $conn->close();
+                     ?>
                   </tbody>
                 </table>
       </div>
