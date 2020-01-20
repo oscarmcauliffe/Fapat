@@ -5,9 +5,6 @@
         <a href="index.php?action=nousContacter" class="buttonFoot">
             Nous Contacter
         </a>
-        <a href="index.php?action=aPropos" class="buttonFoot">
-            A Propos
-        </a>
         <a href="index.php?action=conditions" class="buttonFoot">
             Conditions d' Utilisation
         </a>
@@ -16,12 +13,6 @@
             <h3>Information</h3>
             <a href="#" class="buttonFoot">
                 Qui sommes-nous ?
-            </a>
-            <a href="#" class="buttonFoot">
-                Quelque Chose
-            </a>
-            <a href="#" class="buttonFoot">
-                Quelque Chose
             </a>
         </div>
 

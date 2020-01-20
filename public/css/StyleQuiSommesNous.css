@@ -79,6 +79,9 @@
     border:none;
     box-shadow: -20px 45px 40px 3px rgba(0,0,0,0.75);
 }
+.trombinoscope {
+    margin-top: 40px;
+}
 
 @media screen and (max-width: 800px){
 
