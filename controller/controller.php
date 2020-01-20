@@ -22,9 +22,6 @@ function ajoutCandidat(){
     require('vue/ajoutCandidat.php');
 }
 
-//function faqAdmin(){
-//  require('vue/faqAdmin.php');
-//}
 
 function nousContacter(){
     require('vue/nousContacter.php');
@@ -48,8 +45,17 @@ function faq(){
 function documentation(){
     require('vue/documentation.php');
 }
+
+function statistique(){
+  require('vue/statistique.php');
+}
+
 function faqAdmin(){
     require ('vue/faqAdmin.php');
+}
+
+function modifierFaq(){
+    require('vue/modifierFaq.php');
 }
 
 function logOut(){
@@ -133,4 +139,8 @@ function validMail(){
     }
 }
 
+
+
+
 ?>
+

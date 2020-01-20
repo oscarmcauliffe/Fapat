@@ -67,3 +67,62 @@ h1 {
     padding: 15px;
 
 }
+
+
+/* partie css de la FAQ de l'admin :*/
+
+.modifFaq {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 40%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.modif {
+    text-align: center;
+}
+
+input#saveModif {
+    width: 200px;
+}
+
+a#sup {
+    margin-right: 20px;
+}
+
+a#modif {
+    margin-left: 20px;
+}
+
+.bouton_{
+    color: black;
+    text-decoration: none;
+    background-color: #DDD7E6;
+    border-radius: 5px;
+}

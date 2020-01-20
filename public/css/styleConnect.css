@@ -1,6 +1,6 @@
 .backgroundAll {
   display: flex;
-  height: 80%;
+  height: 100%;
   width: 100%;
   justify-content: center;
 }
@@ -15,7 +15,6 @@
   height:100%;
   width:53%;
   z-index: -1;
-  box-shadow: inset -48px 0px 22px -35px black;
 }
 
 .backgroundRight{
@@ -25,8 +24,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Century Gothic;
+  font-family: "Century Gothic",sans-serif;
   background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+  box-shadow: inset 0px 7px 10px -5px rgba(0,0,0,0.3);
 }
 
 .loginBox{
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   border:none;
-  box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
+  box-shadow: -9px 7px 10px rgba(0,0,0,0.5);
 }
 .loginBox h1{
   display:flex;
@@ -114,11 +114,22 @@
   width:100%;
 }
 
+.buttonBox{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  top: 15%;
+}
+
 .logButton{
-  position: relative;
-  width: 90%;
-  height: 50px;
-  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 50%;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
   background-size: 200%;
@@ -126,13 +137,14 @@
   outline:none;
   cursor: pointer;
   transition: .5s;
-  font-family: Century Gothic;
-  font-weight: bold;
+  font-family: "Century Gothic";
 }
 
 .logButton:hover{
   background-position: right;
 }
+
+
 
 /*---------------------------------------------------------*/
 @media screen and (max-width:800px){

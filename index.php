@@ -14,7 +14,7 @@ if (isset($_GET['action'])){
             connect();
             break;
         case 'logIn':
-            logIn(htmlentitie($_POST['username']),htmlentities($_POST['password']));
+            logIn(htmlentities($_POST['username']),htmlentities($_POST['password']));
             break;
         case 'logOut':
             logOut();
@@ -48,6 +48,9 @@ if (isset($_GET['action'])){
         case 'documentation':
             documentation();
             break;
+        case 'statistique':
+            statistique();
+          break;
         case 'nouveauMdp':
             newPassword(htmlentities($_POST['oldPassword']),htmlentities($_POST['newPassword']),htmlentities($_POST['newPassword2']));
             break;
@@ -68,6 +71,24 @@ if (isset($_GET['action'])){
             addFaq(htmlentities($_POST['question']),htmlentities($_POST['reponse']));
             break;
 
+        case 'suppFaq' :
+            accessIfLogged();
+            accessIfAdmin();
+            suppFaq();
+            break;
+        
+        case 'saveModifFaq' :
+            accessIfLogged();
+            accessIfAdmin();
+            saveModifFaq();
+            break;
+
+        case 'modifierFaq' :
+            accessIfLogged();
+            accessIfAdmin();
+            modifierFaq();
+            break;
+            
         //case 'faqAdmin' :
           //  accessIfAdmin();
         //    faqAdmin();
