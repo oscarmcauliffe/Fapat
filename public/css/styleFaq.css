@@ -97,6 +97,7 @@ input[type="submit"] {
     margin-top: 15px;
 }
 
+
 h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -105,4 +106,23 @@ h2 {
 
 .modif {
     text-align: center;
+}
+
+input#saveModif {
+    width: 200px;
+}
+
+a#sup {
+    margin-right: 20px;
+}
+
+a#modif {
+    margin-left: 20px;
+}
+
+.bouton_{
+    color: black;
+    text-decoration: none;
+    background-color: #DDD7E6;
+    border-radius: 5px;
 }

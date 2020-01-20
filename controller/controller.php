@@ -49,6 +49,10 @@ function faqAdmin(){
     require ('vue/faqAdmin.php');
 }
 
+function modifierFaq(){
+    require('vue/modifierFaq.php');
+}
+
 function logOut(){
     unset($_SESSION['logged']);
     header('Location: index.php?action=main');
@@ -129,5 +133,7 @@ function validMail(){
         }
     }
 }
+
+
 
 ?>

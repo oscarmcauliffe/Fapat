@@ -67,10 +67,10 @@ $faqs=$pdoStat->fetchAll();
                 
                 
                 <div class="modif"> 
-                    <a href="index.php?action=suppFaq&id=<?= $faq['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cette FAQ ?');">Supprimer le FAQ</a> 
+                    <a id="sup" class="bouton_" href="index.php?action=suppFaq&id=<?= $faq['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cette FAQ ?');">Supprimer le FAQ</a> 
                     
                 
-                    <a href="modifier.php?id=<?= $faq['id']?>" >Modifier la FAQ</a>
+                    <a id="modif" class="bouton_" href="index.php?action=modifierFaq&id=<?= $faq['id']?>" >Modifier la FAQ </a>
 
                 </div> <br>
        

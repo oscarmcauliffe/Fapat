@@ -69,9 +69,23 @@ if (isset($_GET['action'])){
             break;
         
         case 'suppFaq' :
+            accessIfLogged();
+            accessIfAdmin();
             suppFaq();
             break;
+        
+        case 'saveModifFaq' :
+            accessIfLogged();
+            accessIfAdmin();
+            saveModifFaq();
+            break;
 
+        case 'modifierFaq' :
+            accessIfLogged();
+            accessIfAdmin();
+            modifierFaq();
+            break;
+            
         //case 'faqAdmin' :
           //  accessIfAdmin();
         //    faqAdmin();

@@ -129,6 +129,22 @@ function suppFaq(){
     header('Location: index.php?action=faqAdmin');
 }
 
+function saveModifFaq(){
+    
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+            
+    $pdoStat = $objPdo->prepare('UPDATE faq set question=:question, reponse=:reponse WHERE id=:num LIMIT 1');
+            
+    $pdoStat->bindValue(':num',$_POST['idf'], PDO::PARAM_INT);
+    $pdoStat->bindValue(':question',$_POST['question'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':reponse',$_POST['reponse'], PDO::PARAM_STR);
+            
+    $executeIsOk = $pdoStat->execute();
+    
+    header('Location: index.php?action=faqAdmin');
+}
+
+
 
 
 ?>
