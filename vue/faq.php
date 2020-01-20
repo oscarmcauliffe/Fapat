@@ -40,7 +40,9 @@
                 </div>
             </div>
         </div>
+
         <!--question 3:  -->
+
         <div class="section">
             <h3>Puis-je télécharger et partager mes résultats ?</h3>
             <div class="reponse">
@@ -49,7 +51,9 @@
                 </div>
             </div>
         </div>
+
         <!-- question 4: -->
+
         <div class="section">
             <h3>Où puis-je consulter les informations relatives au test et à l'armée de l'air ?</h3>
             <div class="reponse">
@@ -69,6 +73,7 @@
                 </div>
             </div>
         </div>
+        
       <!-- -->
 
         <div class="section">

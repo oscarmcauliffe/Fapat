@@ -83,11 +83,11 @@ body {
 .navBar ul li{
     display: inline;
     float: left;
-    line-height: 100%;
+    line-height: 60%;
 }
 .navBar ul li a{
     display: inline-block;
-    padding: 30px 15px;
+    padding: 0px 15px;
     margin: auto;
     vertical-align: auto;
     height: 100%;
@@ -98,13 +98,19 @@ body {
     color:black;
     font-family: Candara;
 }
-
-.animated:active {
-  color: #f1f1f1;
+.navBar.whitespace{
+  display: none;
+}
+.animated{
+  top:5%;
 }
 
 .animated:hover{
     color: orange;
+}
+
+.ongletActif:active {
+  color: red;
 }
 
 .animated::after{
@@ -112,7 +118,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: orange;
+    background-color: orange;
     transition:all .5s;
 }
 
@@ -120,7 +126,6 @@ body {
     width: 100%;
 //transition: fill 1s forward;
 }
-
 
 .dropdown {
     position: relative;
@@ -312,3 +317,7 @@ body {
     text-align: center;
     font-size: 15px;
 }
+@media screen and (max-width: 800px){
+  .navBar.whitespace{
+    display: run-in;
+  }

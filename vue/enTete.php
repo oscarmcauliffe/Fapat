@@ -8,7 +8,7 @@
         <img src="public/images/FAPAT.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div class ="navBar" style="flex-basis: 50%; white-space:nowrap; overflow: auto">
-         <ul>
+         <ul class"ongletActif">
              <li><a class ="animated" href ="index.php?action=main">Home</a></li>
              <?php
              if(isset($_SESSION['logged'])==false){
