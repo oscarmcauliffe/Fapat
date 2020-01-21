@@ -37,13 +37,17 @@ include ('enTete.php');
         }
         ?>
         <div class="corps">
-            <a href ="?lan=en&action=documentation">Documentation</a>
             <?php
-            if (isset($_SESSION['logged'])==true){
-                echo"<a href=\"?lan=en&action=statistique\">Statistics</a>";
+            if (isset($_SESSION['logged']) == true) {
+                echo "<a href=\"?lan=fr&action=test\">Pass the Test</a>";
+            } else {
+                echo "<a href=\"?lan=fr&action=documentation\">Documentation</a>";
             }
-            else{
-                echo"<a href=\"?lan=en&action=faq\">FAQ</a>";
+
+            if (isset($_SESSION['logged']) == true) {
+                echo "<a href=\"?lan=fr&action=statistique\">Statistics</a>";
+            } else {
+                echo "<a href=\"?lan=fr&action=faq\">FAQ</a>";
             }
             ?>
         </div>

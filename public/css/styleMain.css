@@ -1,4 +1,4 @@
-html{
+html {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -9,39 +9,40 @@ body {
     margin: 0;
 }
 
-.background{
-    display:block;
-    height:100%;
+.background {
+    display: block;
+    height: 100%;
     width: 100%;
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index:-1;
+    z-index: -1;
 }
 
-.logoFapat{
-    display:flex;
+.logoFapat {
+    display: flex;
     position: relative;
     left: 0;
     width: 6%;
 }
 
-.fapatText{
-    display:flex;
+.fapatText {
+    display: flex;
     position: relative;
     width: 20%;
 }
 
-.entete{
+.entete {
     display: flex;
     height: 12%;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .entete > div {
-    background-color: white; opacity: 0.8;
+    background-color: white;
+    opacity: 0.8;
     padding: 10px;
     margin: 0px;
     font-size: 50px;
@@ -49,7 +50,7 @@ body {
 }
 
 
-.textContent{
+.textContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,37 +58,38 @@ body {
     width: 60%;
 }
 
-.textContent > p{
+.textContent > p {
     font-family: Century Gothic;
     font-size: 60px;
     font-weight: bold;
     color: white;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .navBar {
     position: relative;
     align-items: center;
     left: 10%;
-    display:flex;
-    margin:0px;
-    padding:0px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
 }
 
-.navBar ul{
+.navBar ul {
     list-style-type: none;
     margin: 0px 0px 0px 0px;
-    padding:0;
+    padding: 0;
 }
 
-.navBar ul li{
+.navBar ul li {
     display: inline;
     float: left;
     line-height: 60%;
 }
-.navBar ul li a{
+
+.navBar ul li a {
     display: inline-block;
     padding: 0px 15px;
     margin: auto;
@@ -97,36 +99,38 @@ body {
 
     text-decoration: none;
     font-size: 1.05vw;
-    color:black;
+    color: black;
     font-family: Century Gothic;
 }
-.navBar.whitespace{
-  display: none;
-}
-.animated{
-  top:5%;
+
+.navBar.whitespace {
+    display: none;
 }
 
-.animated:hover{
+.animated {
+    top: 5%;
+}
+
+.animated:hover {
     color: orange;
 }
 
 .ongletActif:active {
-  color: red;
+    color: red;
 }
 
-.animated::after{
+.animated::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background-color: orange;
-    transition:all .5s;
+    transition: all .5s;
 }
 
-.animated:hover::after{
+.animated:hover::after {
     width: 100%;
-//transition: fill 1s forward;
+/ / transition: fill 1 s forward;
 }
 
 .dropdown {
@@ -145,7 +149,7 @@ body {
     position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -171,7 +175,7 @@ body {
     cursor: pointer;
 }
 
-.bodyContent{
+.bodyContent {
     display: flex;
     height: 100%;
     width: 100%;
@@ -206,7 +210,7 @@ body {
 
 .corps > a:hover {
     background-color: white;
-    color:#ff8533;
+    color: #ff8533;
     transition: .5s;
     opacity: 0.9;
     border-radius: 12px;
@@ -218,13 +222,13 @@ body {
 
 .footer {
     display: flex;
-    height:40%;
+    height: 40%;
     flex-direction: column;
     align-items: center;
     background-color: #383838;
 }
 
-.textFooterBox{
+.textFooterBox {
     display: flex;
     position: relative;
     justify-content: center;
@@ -236,7 +240,7 @@ body {
 }
 
 
-.linkFooter1{
+.linkFooter1 {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -245,7 +249,7 @@ body {
     /*align-items: left;*/
 }
 
-.linkFooter1 h3{
+.linkFooter1 h3 {
     font-family: Century Gothic;
     color: white;
 }
@@ -259,7 +263,7 @@ body {
     left: -10%;
 }
 
-.linkFooter2 h3{
+.linkFooter2 h3 {
     font-family: Century Gothic;
     color: white;
 }
@@ -286,41 +290,52 @@ body {
 }
 
 
-.logoFooter{
+.logoFooter {
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     width: 40%;
-    height:25%;
+    height: 25%;
     padding: 0px 50px;
 }
 
-.logo{
+.logo {
     height: 80%;
     width: 35%;
 }
 
-.CopyrightText{
+.CopyrightText {
     background-color: #383838;
     display: flex;
     position: relative;
     height: 20%;
-    width:100%;
+    width: 100%;
     justify-content: center;
     text-align: center;
 
 }
-.CopyrightText p{
+
+.CopyrightText p {
     color: white;
     opacity: 0.6;
     font-family: sans-serif;
     text-align: center;
     font-size: 15px;
 }
-@media screen and (max-width: 800px){
-  .navBar.whitespace{
-    display: run-in;
-  }
+
+@media screen and (max-width: 1000px) {
+    .navBar.whitespace {
+        display: run-in;
+    }
+    .bodyContent{
+        width: 100%;
+        display: block;
+        height: fit-content;
+        text-align: center;
+    }
+    .textContent{
+        text-align: center;
+    }
 }

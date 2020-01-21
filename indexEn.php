@@ -107,6 +107,9 @@ if (isset($_GET['action'])) {
             accessIfAdmin();
             modifierFaq();
             break;
+        case 'test':
+            test();
+            break;
 
         default:
             main();

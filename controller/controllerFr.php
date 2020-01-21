@@ -79,6 +79,11 @@ function modifierFaq()
     require('vueFr/modifierFaq.php');
 }
 
+function test()
+{
+    require('vueFr/test.php');
+}
+
 function logOut()
 {
     unset($_SESSION['logged']);
@@ -166,6 +171,5 @@ function validMail()
         }
     }
 }
-
 
 ?>
