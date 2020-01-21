@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styleConnect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styleProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleProfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/profil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <workItem from="1579016360893" duration="1005000" />
       <workItem from="1579076103030" duration="6339000" />
       <workItem from="1579603457140" duration="1930000" />
-      <workItem from="1579617006914" duration="1953000" />
+      <workItem from="1579617006914" duration="5283000" />
     </task>
     <task id="LOCAL-00001" summary="page admin avec lien (sans style)">
       <created>1578474916708</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579609170726</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="log in finis (hors responsive)">
+      <created>1579618977105</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579618977105</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,18 +178,19 @@
     <MESSAGE value="." />
     <MESSAGE value="Log out unset session gestion" />
     <MESSAGE value="log in modifs" />
-    <option name="LAST_COMMIT_MESSAGE" value="log in modifs" />
+    <MESSAGE value="log in finis (hors responsive)" />
+    <option name="LAST_COMMIT_MESSAGE" value="log in finis (hors responsive)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578927236741">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578927236741" />
-    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1579609169288">
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1579618976573">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578923373852" />
-    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579609169288" />
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579618976573" />
     <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579605437627" />
     <state x="405" y="93" key="FileChooserDialogImpl" timestamp="1579020457109">
       <screen x="0" y="0" width="1280" height="720" />
@@ -207,21 +215,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.834@0.0.1536.834" timestamp="1578925636136" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1579609173193">
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2" timestamp="1579618979968">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578923377533" />
-    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1579609173193" />
+    <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1579618979968" />
     <state x="280" y="92" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1579604635801" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1578473641062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1578473641062" />
-    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579618617211">
+    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579622299922">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1578923352687" />
-    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1579618617211" />
+    <state x="450" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1579622299922" />
     <state x="540" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1579604980953" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1577009359319">
       <screen x="0" y="0" width="1536" height="834" />
