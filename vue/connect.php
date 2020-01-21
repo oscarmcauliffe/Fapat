@@ -45,7 +45,7 @@
                         </div>
                         </div>
                     </form>
-                    <div class="dossierInscription"><a href="public/dossierInscription/Fiche_dinscription_pilote.pdf">Télécharger le dossier d'inscription</a></div>
+                    <div class="dossierInscription"><a href="public/dossierInscription/Fiche_dinscription_pilote.pdf" title="Télécharger le dossier d'inscription" target="_blank">S'inscrire</a></div>
                 </div>
             </div>
         </div>

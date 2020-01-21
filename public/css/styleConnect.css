@@ -176,9 +176,15 @@
   bottom: 10%;
   height: fit-content;
   width: fit-content;
+<<<<<<< HEAD
+  padding-left: 135px;
+  margin-top:5px;
+
+=======
   padding-left: 6px;
   width: 23%;
   text-align: center;
+>>>>>>> bc434aba6fd7e56114328c796eb8cab33bc0f097
 }
 
 .dossierInscription a{
@@ -209,5 +215,9 @@
     font-size: 2vw;
     justify-content: center;
     align-items: center;
+  }
+  .dossierInscription{
+    position:relative;
+    padding-left: 0px;
   }
 }
