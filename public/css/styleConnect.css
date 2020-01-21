@@ -176,7 +176,19 @@
   background-position: right;
 }
 
+.dossierInscription {
+  position: absolute;
+  bottom: 10%;
+  height: fit-content;
+  width: fit-content;
+  padding-left: 20px;
 
+}
+
+.dossierInscription a{
+  color: grey;
+  font-size: 1vw;
+}
 
 /*---------------------------------------------------------*/
 @media screen and (max-width:800px){
