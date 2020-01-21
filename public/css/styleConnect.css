@@ -23,28 +23,49 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
   font-family: "Century Gothic",sans-serif;
-  background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
-  box-shadow: inset 0px 7px 10px -5px rgba(0,0,0,0.3);
+  /*background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+  box-shadow: inset 0px 7px 10px -5px rgba(0,0,0,0.3);*/
 }
 
 .loginBox{
-  background-color: white;
+  background-color:white;
   display: flex;
-  height: 60%;
+  height: fit-content;
   width: 40%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border:none;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  /*border:none;*/
   box-shadow: -9px 7px 10px rgba(0,0,0,0.5);
 }
-.loginBox h1{
-  display:flex;
+
+.title{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.boxBoutton {
+  height:30%;
+  display: flex;
+/**/
+}
+
+.loginBox p{
+  /*display:flex;
   position: relative;
-  top: -30px;
+  top: -30px;*/
   font-weight: bold;
+}
+
+.entreUtilisateur{
+  display: flex;
+  flex-flow: column wrap;
+  height: 60%;
+  width: 100%;
+
 }
 
 .loginWrite{
@@ -118,21 +139,22 @@
   position:relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 50%;
+  justify-content: center;
+  height: fit-content;
+  margin: 15px;
   width: 100%;
-  top: 15%;
+  bottom: 0%;
+  /*top: 15%;*/
 }
 
 .logButton{
   display: flex;
   justify-content: center;
   width: 45%;
-  height: 50%;
+  height: fit-content;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
-  background-size: 200%;
+  /*background-size: 200%;*/
   color:white;
   outline:none;
   cursor: pointer;

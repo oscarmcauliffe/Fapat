@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styleConnect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleConnect.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
