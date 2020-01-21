@@ -13,8 +13,8 @@
 
     <div class="statSelect">
       <ul>
-        <li><a href="#" onclick="showGraph1()">Diagramme</a></li>
         <li><a href="#" onclick="showFigures()">Statistiques</a></li>
+        <li><a href="#" onclick="showGraph1()">Diagramme</a></li>
         <li><a href="#" onclick="showTable()">Classement</a></li>
       </ul>
     </div>
@@ -42,7 +42,17 @@
             </div>
             <div class="percent">
               <h2>Taux de réussite au test</h2>
-              <h3>3.5</h3>
+              <h3><?php $conn = new mysqli("localhost","root","","fapat");
+              $admisSql = "SELECT score FROM stats WHERE score>994";
+              $nbSql = "SELECT MAX(id) FROM stats";
+              $admisResult = $conn->query($admisSql);
+              $nbResult = $conn->query($nbSql);
+
+              $row = mysqli_fetch_row($admisResult);
+              $rowNb = mysqli_fetch_row($nbResult);
+
+              $percent = sizeof($row)/$rowNb[0];
+              echo $percent; ?></h3>
               <h4>%</h4>
             </div>
             <div class="percent">
@@ -55,7 +65,7 @@
         </div>
 
         <div class="tableBox" id="tableBox">
-          <input type="text" id="input" onkeyup="rechercher()" placeholder="Rechercher un utilisateur">
+          <input type="text" id="input" onkeyup="rechercher()" placeholder="Rechercher un nom">
           <table class="table-content" id="table">
                     <thead>
                       <tr>
@@ -63,6 +73,7 @@
                         <td>Nom</td>
                         <td>Prénom</td>
                         <td>Score</td>
+                        <td>Mention</td>
                       </tr>
                     </thead>
 
@@ -75,10 +86,18 @@
                       if ($result->num_rows > 0) {
                       // output data of each row
                       $rank = 1;
+                      $admis = "";
                       while($row = $result->fetch_assoc()) {
 
+                        if((int)$row['score'] > 994){
+                          $admis = "Admis";
+                        }
+                        else {
+                          $admis = "Non admis";
+                        }
+
                         echo "<tr><td>" . $rank . "</td><td>" . $row["nom"].
-                         "</td><td>" . $row["prenom"]. "</td><td>" . $row["score"]. "</td></tr>";
+                         "</td><td>" . $row["prenom"]. "</td><td>" . $row["score"]. "</td><td id = mention>" . $admis. "</td></tr>";
                          $rank = $rank + 1;
                       }
                       } else {

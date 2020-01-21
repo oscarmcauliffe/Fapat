@@ -1,9 +1,8 @@
+window.onload = showFigures();
 
 function showTable(){
   var table = document.getElementById("tableBox");
   if (table.style.display == "block"){
-    table.style.display = "none";
-    document.getElementById("title").innerHTML = "Graphique";
   } else {
     table.style.display = "block";
     document.getElementById("title").innerHTML = "CLASSEMENT";
@@ -16,7 +15,6 @@ function showTable(){
 function showGraph1(){
   var stat1 = document.getElementById("stat1");
   if(stat1.style.display == "block"){
-    stat1.style.display == "none";
   }else {
     stat1.style.display = "block";
     document.getElementById("title").innerHTML = "Graphique";
@@ -97,7 +95,6 @@ function showGraph1(){
 function showFigures(){
   var divFigures = document.getElementById("figures");
   if (divFigures.style.display == "block"){
-    divFigures.style.display = "none";
   } else {
     divFigures.style.display = "block";
     document.getElementById("title").innerHTML = "Quelques chiffres";
