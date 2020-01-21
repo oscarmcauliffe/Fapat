@@ -18,8 +18,17 @@ function mainAdmin(){
     require('vue/mainAdmin.php');
 }
 
+function modifCandidat(){
+    require('vue/modifCandidat.php');
+}
+
 function ajoutCandidat(){
     require('vue/ajoutCandidat.php');
+}
+
+
+function modifierUser(){
+    require('vue/modifierUser.php');
 }
 
 

@@ -144,6 +144,38 @@ function saveModifFaq(){
     header('Location: index.php?action=faqAdmin');
 }
 
+function suppUser(){
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+
+    $pdoStat=$objPdo->prepare('DELETE FROM users WHERE id=:num LIMIT 1');
+
+    $pdoStat->bindValue(':num', $_GET['id'], PDO::PARAM_INT);
+
+
+    $executeIsOk = $pdoStat-> execute();
+
+    header('Location: index.php?action=modifCandidat');
+    
+}
+
+function saveModifUser(){
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+            
+    $pdoStat = $objPdo->prepare('UPDATE users set username=:username, nom=:nom, prenom=:prenom, email=:email, dateNaissance=:dateNaissance WHERE id=:num LIMIT 1');
+            
+    $pdoStat->bindValue(':num',$_POST['id'], PDO::PARAM_INT);
+    $pdoStat->bindValue(':username',$_POST['username'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':nom',$_POST['nom'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':prenom',$_POST['prenom'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':email',$_POST['email'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':dateNaissance',$_POST['dateNaissance'], PDO::PARAM_STR);
+            
+    $executeIsOk = $pdoStat->execute();
+    
+    header('Location: index.php?action=modifCandidat');
+    
+}
+
 
 
 

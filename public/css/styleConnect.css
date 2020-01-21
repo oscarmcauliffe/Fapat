@@ -26,18 +26,17 @@
   align-content: center;
   align-items: center;
   font-family: "Century Gothic",sans-serif;
-  /*background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
-  box-shadow: inset 0px 7px 10px -5px rgba(0,0,0,0.3);*/
+  background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+  box-shadow: inset 0px 7px 10px -5px rgba(0,0,0,0.3);
 }
 
 .loginBox{
   background-color:white;
   display: flex;
-  height: fit-content;
-  width: 40%;
+  height: 60%;
+  width: 50%;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  /*border:none;*/
   box-shadow: -9px 7px 10px rgba(0,0,0,0.5);
 }
 
@@ -50,13 +49,10 @@
 .boxBoutton {
   height:30%;
   display: flex;
-/**/
+
 }
 
 .loginBox p{
-  /*display:flex;
-  position: relative;
-  top: -30px;*/
   font-weight: bold;
 }
 
@@ -65,6 +61,10 @@
   flex-flow: column wrap;
   height: 60%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
 
 }
 
@@ -101,6 +101,8 @@
   width: 100%;
   pointer-events: none;
   border-bottom: 1px solid black;
+  display: flex;
+  text-align: center;
 }
 
 .content-name{
@@ -139,22 +141,25 @@
   position:relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: fit-content;
+  height: 100%;
   margin: 15px;
   width: 100%;
   bottom: 0%;
   /*top: 15%;*/
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
 }
 
 .logButton{
   display: flex;
   justify-content: center;
-  width: 45%;
-  height: fit-content;
+  width: 60%;
+  height: 60%;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
-  /*background-size: 200%;*/
   color:white;
   outline:none;
   cursor: pointer;
@@ -166,7 +171,20 @@
   background-position: right;
 }
 
+.dossierInscription {
+  position: absolute;
+  bottom: 10%;
+  height: fit-content;
+  width: fit-content;
+  padding-left: 6px;
+  width: 23%;
+  text-align: center;
+}
 
+.dossierInscription a{
+  color: grey;
+  font-size: 1vw;
+}
 
 /*---------------------------------------------------------*/
 @media screen and (max-width:800px){

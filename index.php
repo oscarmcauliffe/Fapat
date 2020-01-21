@@ -57,11 +57,36 @@ if (isset($_GET['action'])){
         case 'mailContact':
             mailContact(htmlentities($_POST['subject']),htmlentities($_POST['name']),htmlentities($_POST['message']),htmlentities($_POST['email']));
             break;
+            
+        case 'modifCandidat':
+            accessIfLogged();
+            accessIfAdmin();
+            modifCandidat();
+            break;
+            
         case 'ajoutCandidat':
             accessIfLogged();
             accessIfAdmin();
             ajoutCandidat();
             break;
+                    
+        case 'suppUser':
+            accessIfLogged();
+            accessIfAdmin();
+            suppUser();
+            break;
+            
+        case 'modifierUser':
+            accessIfLogged();
+            accessIfAdmin();
+            modifierUser();
+            break;
+            
+        case 'saveModifUser':
+            accessIfLogged();
+            accessIfAdmin();
+            saveModifUser();
+            
         case 'addUser':
             addUser(htmlentities($_POST['nom']),htmlentities($_POST['prenom']),htmlentities($_POST['email']),htmlentities($_POST['dateDeNaissance']));
         case 'quiSommesNous':
