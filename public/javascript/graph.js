@@ -1,13 +1,14 @@
 
 function showTable(){
-  var table = document.getElementById("table");
+  var table = document.getElementById("tableBox");
   if (table.style.display == "block"){
     table.style.display = "none";
-    document.getElementById("title").innerHTML = "STATISTIQUES";
+    document.getElementById("title").innerHTML = "Graphique";
   } else {
     table.style.display = "block";
     document.getElementById("title").innerHTML = "CLASSEMENT";
     document.getElementById("stat1").style.display ="none";
+    document.getElementById('figures').style.display = "none";
   }
 }
 
@@ -18,8 +19,9 @@ function showGraph1(){
     stat1.style.display == "none";
   }else {
     stat1.style.display = "block";
-    document.getElementById("title").innerHTML = "STATISTIQUES";
-    document.getElementById("table").style.display = "none";
+    document.getElementById("title").innerHTML = "Graphique";
+    document.getElementById("tableBox").style.display = "none";
+    document.getElementById('figures').style.display = "none";
   }
 
   $(document).ready(function(){
@@ -77,7 +79,7 @@ function showGraph1(){
               yAxes: [{
                     display: true,
                     ticks: {
-                      suggestedMin: 500,    // minimum will be 0, unless there is a lower value.
+                      suggestedMin: 750,    // minimum will be 0, unless there is a lower value.
                       suggestedMax:1000
             }
         }]
@@ -90,4 +92,37 @@ function showGraph1(){
   });
 
 
+}
+
+function showFigures(){
+  var divFigures = document.getElementById("figures");
+  if (divFigures.style.display == "block"){
+    divFigures.style.display = "none";
+  } else {
+    divFigures.style.display = "block";
+    document.getElementById("title").innerHTML = "Quelques chiffres";
+    document.getElementById("stat1").style.display ="none";
+    document.getElementById("tableBox").style.display = "none";
+  }
+}
+
+
+function rechercher() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tableBox");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }

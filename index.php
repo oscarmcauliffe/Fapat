@@ -57,11 +57,6 @@ if (isset($_GET['action'])){
         case 'mailContact':
             mailContact(htmlentities($_POST['subject']),htmlentities($_POST['name']),htmlentities($_POST['message']),htmlentities($_POST['email']));
             break;
-        case 'ajoutCandidat':
-            accessIfLogged();
-            accessIfAdmin();
-            ajoutCandidat();
-            break;
             
         case 'modifCandidat':
             accessIfLogged();
@@ -69,6 +64,12 @@ if (isset($_GET['action'])){
             modifCandidat();
             break;
             
+        case 'ajoutCandidat':
+            accessIfLogged();
+            accessIfAdmin();
+            ajoutCandidat();
+            break;
+                    
         case 'suppUser':
             accessIfLogged();
             accessIfAdmin();

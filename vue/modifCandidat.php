@@ -17,11 +17,21 @@
     <?php
     include ('enTete.php');
     ?>
-
     <div class="background">
         <div class="contenu">
+            
+            <h1>Modifier le profil d'un utilisateur</h1>
+            
+            <?php
+            $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
+                    
+            $user = $db->query('SELECT * FROM users');
+            
+            
+            ?>
+            
+            
             <table class="tableCandidat" align="center">
-                <!--<h1>Modifier un profil</h1>-->
                     <thead>
                         <tr>
                             <th>id</th>
@@ -35,12 +45,11 @@
                         </tr>
                     </thead>
                 <tbody>
+                    
                     <?php
-                    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
-                    $req = $db->query("select * from users");
-                    $req->execute();
 
-                    while($row = $req->fetch()) : ?>
+
+                    while($row = $user->fetch()) : ?>
                         <tr>
                             <td><?php echo $row['id']; ?></td>
                             <td><?php echo $row['username']; ?></td>
@@ -54,9 +63,9 @@
                                 <a id="sup" class="bouton" href="index.php?action=suppUser&id=<?= $row['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cet utilisateur ?');">Supprimer</a> </td>
                         </tr>
 
-
-                 <br>
                     <?php endwhile ?>
+                    
+                    
                 </tbody>
             </table>
         </div>

@@ -1,8 +1,3 @@
-<?php
-$conn = new mysqli("localhost","root","","fapat");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -18,9 +13,8 @@ $conn = new mysqli("localhost","root","","fapat");
 
     <div class="statSelect">
       <ul>
-        <li><a href="#" onclick="showGraph1()">Graph 1</a></li>
-        <li><a href="#">Stat 2</a></li>
-        <li><a href="#">Stat 3</a></li>
+        <li><a href="#" onclick="showGraph1()">Diagramme</a></li>
+        <li><a href="#" onclick="showFigures()">Statistiques</a></li>
         <li><a href="#" onclick="showTable()">Classement</a></li>
       </ul>
     </div>
@@ -32,52 +26,76 @@ $conn = new mysqli("localhost","root","","fapat");
         <div class="graphBox" id="stat1">
           <canvas id="chartScore"></canvas>
         </div>
-        <div class="graphBox" id="stat2">
-          <canvas></canvas>
+        <div class="graphBox" id="figures">
+          <div class="percentBox">
+            <div class="percent">
+              <h2>Score moyen total</h2>
+              <h3>
+                <?php $conn = new mysqli("localhost","root","","fapat");
+                $avgSql = "SELECT AVG(score) FROM stats";
+                $avgResult = $conn->query($avgSql);
+                $row = mysqli_fetch_row($avgResult);
+                $avgResult->close();
+                echo (int)$row[0]; ?>
+              </h3>
+              <h4>pts</h4>
+            </div>
+            <div class="percent">
+              <h2>Taux de réussite au test</h2>
+              <h3>3.5</h3>
+              <h4>%</h4>
+            </div>
+            <div class="percent">
+              <h2>Score moyen en reactivité</h2>
+              <h3>997</h3>
+              <h4>pts</h4>
+            </div>
+          </div>
+
         </div>
-        <div class="graphBox" id="stat3">
-          <canvas></canvas>
+
+        <div class="tableBox" id="tableBox">
+          <input type="text" id="input" onkeyup="rechercher()" placeholder="Rechercher un utilisateur">
+          <table class="table-content" id="table">
+                    <thead>
+                      <tr>
+                        <td>Rang</td>
+                        <td>Nom</td>
+                        <td>Prénom</td>
+                        <td>Score</td>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <?php
+                      $conn = new mysqli("localhost","root","","fapat");
+                      $sql = "SELECT score,nom,prenom FROM users NATURAL JOIN stats ORDER BY score DESC";
+                      $result = $conn->query($sql);
+                      if ($result->num_rows > 0) {
+                      // output data of each row
+                      $rank = 1;
+                      while($row = $result->fetch_assoc()) {
+
+                        echo "<tr><td>" . $rank . "</td><td>" . $row["nom"].
+                         "</td><td>" . $row["prenom"]. "</td><td>" . $row["score"]. "</td></tr>";
+                         $rank = $rank + 1;
+                      }
+                      } else {
+                      echo "0 results";
+                      }
+                      $conn->close();
+                      $result->close();
+                       ?>
+                    </tbody>
+                  </table>
         </div>
-
-
-        <table class="table-content" id="table">
-                  <thead>
-                    <tr>
-                      <td>Rang</td>
-                      <td>Nom</td>
-                      <td>Prénom</td>
-                      <td>Score</td>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-
-                    <?php
-                    $sql = "SELECT score,nom,prenom FROM users NATURAL JOIN stats ORDER BY score DESC";
-                    $result = $conn->query($sql);
-                    if ($result->num_rows > 0) {
-                    // output data of each row
-                    $rank = 1;
-                    while($row = $result->fetch_assoc()) {
-
-                      echo "<tr><td>" . $rank . "</td><td>" . $row["nom"].
-                       "</td><td>" . $row["prenom"]. "</td><td>" . $row["score"]. "</td></tr>";
-                       $rank = $rank + 1;
-                    }
-                    } else {
-                    echo "0 results";
-                    }
-                    $conn->close();
-                     ?>
-                  </tbody>
-                </table>
       </div>
     </div>
 
     <?php
     include ('piedPage.php');
     ?>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js></script>
     <script src="public/javascript/graph.js"></script>

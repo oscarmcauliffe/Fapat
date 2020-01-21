@@ -37,7 +37,6 @@
   width: 50%;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  /*border:none;*/
   box-shadow: -9px 7px 10px rgba(0,0,0,0.5);
 }
 
@@ -54,9 +53,6 @@
 }
 
 .loginBox p{
-  /*display:flex;
-  position: relative;
-  top: -30px;*/
   font-weight: bold;
 }
 
@@ -164,7 +160,6 @@
   height: 60%;
   border:none;
   background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
-  /*background-size: 200%;*/
   color:white;
   outline:none;
   cursor: pointer;
@@ -181,9 +176,15 @@
   bottom: 10%;
   height: fit-content;
   width: fit-content;
+<<<<<<< HEAD
   padding-left: 135px;
   margin-top:5px;
 
+=======
+  padding-left: 6px;
+  width: 23%;
+  text-align: center;
+>>>>>>> bc434aba6fd7e56114328c796eb8cab33bc0f097
 }
 
 .dossierInscription a{
