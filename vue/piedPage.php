@@ -11,7 +11,7 @@
         </div>
         <div class="linkFooter2">
             <h3>Information</h3>
-            <a href="#" class="buttonFoot">
+            <a href="index.php?action=quiSommesNous" class="buttonFoot">
                 Qui sommes-nous ?
             </a>
         </div>
