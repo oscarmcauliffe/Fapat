@@ -9,7 +9,7 @@
     </div>
     <div class ="navBar" style="flex-basis: 50%; white-space:nowrap; overflow: auto">
         <ul class"ongletActif">
-        <li><a class ="animated" href ="?lan=fr&action=main">Home</a></li>
+        <li><a class ="animated" href ="?lan=fr&action=main">Accueil</a></li>
         <?php
         if(isset($_SESSION['logged'])==false){
             echo "<li><a class =\"animated\" href =\"?lan=fr&action=connect\">Se connecter</a></li>";
@@ -35,4 +35,3 @@
         </div>
     </div>
 </div>
-
