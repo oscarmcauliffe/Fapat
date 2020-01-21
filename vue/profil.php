@@ -18,9 +18,7 @@
         <div class="backgroundAll">
             <div class="backgroundProfil">
                 <div class="profilBox">
-                    <div style="height: 90%">
-                        <img src="public/images/defaultuser.png" style="max-width: 100%; max-height: 100%">
-                    </div>
+
                     <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%">
                         <h1>Profil</h1>
                         <p><b>Nom : </b><?=$_SESSION['nom']?></p>

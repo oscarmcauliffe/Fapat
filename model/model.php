@@ -21,7 +21,7 @@ function logIn($username,$password){
             exit;
         }
         else{
-            header('Location: index.php?action=profil');
+            header('Location: index.php?action=main');
             exit;
         }
     }
