@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat_2;charset=utf8','root',''); 
+=======
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
+>>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
 
 $pdoStat=$objPdo->prepare('SELECT * FROM faq');
 

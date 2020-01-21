@@ -16,6 +16,15 @@
 include('enTete.php');
 ?>
 
+<<<<<<< HEAD
+    <div class="fondCouleur">
+        <div class="fondTexte">
+            <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+                <h2> Qui sommes nous ? </h2>
+                <hr>
+                <p>
+                CapSens est une jeune start-up. Forte de 6 personnes aux profils variés et à dominante informatique et éléctronique, CapSens sait se montrer à l'écoute de ses clients pour répondre parfaitement à leurs demandes. Tout en restant force de proposition, pour présenter les nouvelles technologies et les adapter au cahier des charges.<br/>
+=======
 <div class="fondCouleur">
     <div class="fondTexte">
         <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
@@ -26,6 +35,7 @@ include('enTete.php');
                 éléctronique, CapSens sait se montrer à l'écoute de ses clients pour répondre parfaitement à leurs
                 demandes. Tout en restant force de proposition, pour présenter les nouvelles technologies et les adapter
                 aux cahier des charges.<br/>
+>>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
                 Nos expériences personnelles nous ont permis de nous concentrer autour des 3 pilliers ci dessous
             </p>
         </div>

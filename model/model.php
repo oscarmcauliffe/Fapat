@@ -86,6 +86,19 @@ function addUser($nom,$prenom,$email,$date){
 }
 
 function showFAQ(){
+<<<<<<< HEAD
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
+    
+    $rep = $db->query("SELECT * FROM faq");
+        
+    while($row = $rep -> fetch()) :
+            //$id = $row['id'];
+            $question = $row['question'];
+            echo $question;
+            $reponse = $row['reponse'];
+            echo $reponse;
+    endwhile;
+=======
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
 
 $pdoStat=$objPdo->prepare('SELECT * FROM faq');
@@ -93,6 +106,7 @@ $pdoStat=$objPdo->prepare('SELECT * FROM faq');
 $executeIsOk=$pdoStat->execute();
 
 $faqs=$pdoStat->fetchAll();
+>>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
      
 }
 
