@@ -24,7 +24,7 @@ function showGraph1(){
 
   $(document).ready(function(){
     $.ajax({
-      url : "http://localhost/fapat%20new/Fapat/vue/dataStat.php",
+      url : "vue/dataStat.php",
       method : 'POST',
       success: function(data){
         console.log(data);
