@@ -54,7 +54,9 @@
         </div>
 
         <div class="backgroundRightAjout">
+            
             <div class="loginBoxAJ">
+                <h2>Ajouter un candidat :</h2>
                 <form action="index.php?action=addUser" method="post" style="width: 90%">
                         <div class="loginWriteAJ">
                             <input id="nom" type="text" name="nom" required>
