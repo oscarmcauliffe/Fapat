@@ -1,0 +1,189 @@
+.statBackground{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color:#0000;
+}
+
+.statBackground h1{
+  display: flex;
+  font-family: "Monserrat",sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffba5a;
+  font-size: 3vw;
+}
+
+
+.statSelect{
+    position: absolute;
+    left: -10%;
+    height: 100%;
+    width: 12%;
+    background-color: #ED7D3A;
+}
+
+.statSelect ul{
+  height: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+.statSelect li{
+  display: flex;
+  width: 100%;
+  height: 15%;
+}
+
+.statSelect a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Century Gothics",sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.statSelect:hover{
+  left: 0;
+  transition: ease 0.5s;
+}
+
+.statSelect a:hover{
+  background-color: #9FC0DE;
+  color: white;
+}
+
+.statBox{
+  height: 80%;
+  width: 75%;
+}
+
+.graphBox{
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+/* Style Tableau*/
+
+.tableBox{
+  display: none;
+  height:100%;
+  width: 100%;
+}
+
+.table-content{
+  position: relative;
+  display: block;
+  height: 80%;
+  width: 100%;
+  font-family: "Quicksand",sans-serif;
+  border-radius: 30px 0px 30px 0px;
+  border-collapse: collapse;
+  margin : 0;
+  font-size: 1.1vw;
+  min-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(0,0,0,0.5);
+}
+
+.table-content thead tr{
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  color: white;
+  text-align: left;
+}
+
+.table-content th,
+.table-content td{
+  height: 100%;
+  width: 25%;
+  padding: 2% 2vw;
+}
+
+.table-content tbody tr{
+  border-bottom: 1px solid #adadad;
+}
+
+.table-content tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.table-content tbody tr:last-of-type{
+  border-bottom: 2px solid lightblue;
+}
+
+.table-content tbody tr:hover{
+  font-size: 1.25vw;
+  color:#5bd1d7;
+  transition: 0.2s linear;
+}
+
+
+.percentBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.percent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  height: 80%;
+  width: 30%;
+  margin: 0 1%;
+  font-family: "Century Gothics",sans-serif;
+  font-size: 1.8vw;
+  box-shadow: 0 0 10px;
+  background-color: #003366;
+
+}
+
+.percent h2 {
+  text-align: center;
+  color: #ffba5a;
+}
+
+.percent h3{
+  position: relative;
+  font-size: 3vw;
+  color: white;
+  top: -10%;
+}
+
+.percent h4{
+  position: relative;
+  font-size: 2vw;
+  top: -28%;
+  color: white
+}
+
+.tableBox input{
+    position: relative;
+    left: 5%;
+    height: 5%;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+    border: 1px solid #adadad;
+    outline: none;
+}
+
+.tableBox input:focus{
+  border: 2px #ffba5a solid;
+  transition: ease 0.3s;
+}

@@ -1,70 +1,67 @@
 <?php
 //Le PHP
 
-require('model/model.php');
+require('model/modelFr.php');
 
 function main(){
-    require('vue/main.php');
+    require('vueFr/main.php');
 }
 function connect(){
-    require('vue/connect.php');
+    require('vueFr/connect.php');
 }
 
 function profil(){
-    require('vue/profil.php');
+    require('vueFr/profil.php');
 }
 
 function mainAdmin(){
-    require('vue/mainAdmin.php');
+    require('vueFr/mainAdmin.php');
 }
 
 function modifCandidat(){
-    require('vue/modifCandidat.php');
+    require('vueFr/modifCandidat.php');
 }
 
 function ajoutCandidat(){
-    require('vue/ajoutCandidat.php');
+    require('vueFr/ajoutCandidat.php');
 }
 
 
 function modifierUser(){
-    require('vue/modifierUser.php');
+    require('vueFr/modifierUser.php');
 }
 
 
 function nousContacter(){
-    require('vue/nousContacter.php');
+    require('vueFr/nousContacter.php');
 }
 
-function aPropos(){
-    require('vue/aPropos.php');
-}
 function quiSommesNous(){
-    require('vue/quiSommesNous.php');
+    require('vueFr/quiSommesNous.php');
 }
 
 function conditions(){
-    require('vue/conditions.php');
+    require('vueFr/conditions.php');
 }
 
 function faq(){
-    require('vue/faq.php');
+    require('vueFr/faq.php');
 }
 
 function documentation(){
-    require('vue/documentation.php');
+    require('vueFr/documentation.php');
 }
 
 function statistique(){
-  require('vue/statistique.php');
+  require('vueFr/statistique.php');
 }
 
 function faqAdmin(){
-    require ('vue/faqAdmin.php');
+    require ('vueFr/faqAdmin.php');
 }
 
 function modifierFaq(){
-    require('vue/modifierFaq.php');
+    require('vueFr/modifierFaq.php');
 }
 
 function logOut(){
@@ -72,7 +69,7 @@ function logOut(){
     if(isset($_SESSION['gestion'])){
         unset($_SESSION['gestion']);
     }
-    header('Location: index.php?action=main');
+    header('Location: ?lan=fr&action=main');
     exit;
 }
 
@@ -89,13 +86,13 @@ function randomPassword() {
 
 function accessIfLogged(){
     if(isset($_SESSION['logged'])==false){
-        header('Location: index.php?action=main');
+        header('Location: ?lan=fr&action=main');
     }
 }
 
 function accessIfAdmin(){
     if(isset($_SESSION['gestion'])==false){
-        header('Location: index.php?action=main');
+        header('Location: ?lan=fr&action=main');
     }
 }
 
@@ -110,7 +107,7 @@ function mailContact($subject,$name,$message,$email){
     else{
         $_SESSION['mail'] = 'failed';
     }
-    header('Location: index.php?action=nousContacter');
+    header('Location: ?lan=fr&action=nousContacter');
     exit;
 }
 
@@ -155,4 +152,3 @@ function validMail(){
 
 
 ?>
-

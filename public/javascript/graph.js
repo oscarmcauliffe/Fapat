@@ -24,7 +24,7 @@ function showGraph1(){
 
   $(document).ready(function(){
     $.ajax({
-      url : "vue/dataStat.php",
+      url : "vueFr/dataStat.php",
       method : 'POST',
       success: function(data){
         console.log(data);
