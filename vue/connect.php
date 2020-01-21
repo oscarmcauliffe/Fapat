@@ -39,8 +39,7 @@
                         <div class="buttonBox">
                           <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
                           <label><b><?=errorLogIn()?></b></label>
-                          <button name="submit" type="submit" class="logButton" value ="Se Connecter">Mot de passe oublié</button>
-                          <label><b></b></label>
+
                         </div>
 
                     </form>
