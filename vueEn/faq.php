@@ -2,7 +2,7 @@
 
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
-$pdoStat=$objPdo->prepare('SELECT * FROM faq');
+$pdoStat=$objPdo->prepare('SELECT * FROM faqEn');
 
 $executeIsOk=$pdoStat->execute();
 

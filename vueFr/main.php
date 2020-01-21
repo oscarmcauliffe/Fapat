@@ -16,9 +16,9 @@ include ('enTete.php');
 <div class ="background" style="background-image:url('public/images/fighterPilot.jpg');">
     <div class="bodyContent">
         <div class = "textContent">
-            <p>Fighting Aircraft Pilot</p>
-            <p> Aptitude Test</p>
+            <p>Fighting Aircraft Pilot<br>Aptitude Test</p>
         </div>
+
         <?php
         if (isset($_SESSION['logged'])==true){
             if(isset($_SESSION['gestion'])){
