@@ -35,7 +35,7 @@
                      <div class="details">
                         <div class="content">
                             <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
-                            <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
+                            <a class="boutonOption"  href="index.php?action=statistique">Consulter les statistiques</a>
                         </div>
                      </div>
                 </div>
@@ -47,7 +47,7 @@
                      <div class="details">
                          <div class="content">
                              <a class="boutonOption" href="index.php?action=ajoutCandidat">Ajouter un profil</a>
-                             <a class="boutonOption" href="index.php?action=#">Modifier un profil</a>
+                             <a class="boutonOption" href="index.php?action=modifCandidat">Modifier un profil</a>
                         </div>
                      </div>
                 </div>

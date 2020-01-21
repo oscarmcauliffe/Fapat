@@ -22,6 +22,14 @@ function ajoutCandidat(){
     require('vue/ajoutCandidat.php');
 }
 
+function modifCandidat(){
+    require('vue/modifCandidat.php');
+}
+
+function modifierUser(){
+    require('vue/modifierUser.php');
+}
+
 
 function nousContacter(){
     require('vue/nousContacter.php');

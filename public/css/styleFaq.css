@@ -72,7 +72,7 @@ h1 {
 /* partie css de la FAQ de l'admin :*/
 
 .modifFaq {
-    text-align: center;
+    text-align: left;
 }
 
 input[type="text"] {
@@ -95,6 +95,7 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     margin-top: 15px;
+    margin-left:13%;
 }
 
 
@@ -125,4 +126,8 @@ a#modif {
     text-decoration: none;
     background-color: #DDD7E6;
     border-radius: 5px;
+}
+
+form {
+    margin-left: 32%;
 }
