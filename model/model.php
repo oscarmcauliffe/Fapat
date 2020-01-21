@@ -86,33 +86,19 @@ function addUser($nom,$prenom,$email,$date){
 }
 
 function showFAQ(){
-<<<<<<< HEAD
-    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
-    
-    $rep = $db->query("SELECT * FROM faq");
-        
-    while($row = $rep -> fetch()) :
-            //$id = $row['id'];
-            $question = $row['question'];
-            echo $question;
-            $reponse = $row['reponse'];
-            echo $reponse;
-    endwhile;
-=======
-$objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
 $pdoStat=$objPdo->prepare('SELECT * FROM faq');
 
 $executeIsOk=$pdoStat->execute();
 
 $faqs=$pdoStat->fetchAll();
->>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
-     
+
 }
 
 function addFaq($question,$reponse){
-               
-$objPdo = new PDO('mysql:host=localhost;dbname=fapat','root',''); 
+
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat','root','');
 $pdoStat = $objPdo->prepare('INSERT INTO faq VALUES (NULL, :question, :reponse)');
 
 
@@ -126,12 +112,12 @@ if($insertIsOk){
 } else {
     $message = 'echec';
 }
-    
+
 header('Location: index.php?action=faqAdmin');
 }
 
 function suppFaq(){
-    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
     $pdoStat=$objPdo->prepare('DELETE FROM faq WHERE id=:num LIMIT 1');
 
@@ -144,17 +130,17 @@ function suppFaq(){
 }
 
 function saveModifFaq(){
-    
-    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
-            
+
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
+
     $pdoStat = $objPdo->prepare('UPDATE faq set question=:question, reponse=:reponse WHERE id=:num LIMIT 1');
-            
+
     $pdoStat->bindValue(':num',$_POST['idf'], PDO::PARAM_INT);
     $pdoStat->bindValue(':question',$_POST['question'], PDO::PARAM_STR);
     $pdoStat->bindValue(':reponse',$_POST['reponse'], PDO::PARAM_STR);
-            
+
     $executeIsOk = $pdoStat->execute();
-    
+
     header('Location: index.php?action=faqAdmin');
 }
 
