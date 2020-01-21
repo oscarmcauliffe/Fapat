@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8978e2-ae5f-45b4-8050-5faa2220f1f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vueEn/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controllerEn.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controllerEn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controllerFr.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controllerFr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexEn.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexEn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexFr.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexFr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styleMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleMain.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vueEn/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/vueEn/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueFr/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/vueFr/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/TD test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vueFr" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -241,7 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579641067213</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="responsive main">
+      <created>1579641883262</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579641883262</updated>
+    </task>
+    <task id="LOCAL-00022" summary="responsive main">
+      <created>1579641912201</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1579641912201</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,19 +274,20 @@
     <MESSAGE value="+anglais" />
     <MESSAGE value="corrections beug" />
     <MESSAGE value="modelStat" />
-    <option name="LAST_COMMIT_MESSAGE" value="modelStat" />
+    <MESSAGE value="responsive main" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive main" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578927236741">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578927236741" />
-    <state x="393" y="11" key="CommitChangelistDialog2" timestamp="1579641882005">
+    <state x="393" y="11" key="CommitChangelistDialog2" timestamp="1579641911644">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1578923373852" />
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579626142164" />
-    <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579641882005" />
+    <state x="393" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579641911644" />
     <state x="405" y="93" key="FileChooserDialogImpl" timestamp="1579020457109">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -293,20 +303,20 @@
     </state>
     <state x="401" y="115" key="MultipleFileMergeDialog/0.0.1280.720@0.0.1280.720" timestamp="1579618628957" />
     <state x="481" y="133" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1579604335928" />
-    <state x="988" y="343" key="NewPhpFileDialog" timestamp="1576604914209">
+    <state x="988" y="343" key="NewPhpFileDialog" timestamp="1579641951733">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="988" y="343" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1576604914209" />
+    <state x="988" y="343" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1579641951733" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1578925636136">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.834@0.0.1536.834" timestamp="1578925636136" />
-    <state x="280" y="92" key="Vcs.Push.Dialog.v2" timestamp="1579641885059">
+    <state x="280" y="92" key="Vcs.Push.Dialog.v2" timestamp="1579641913278">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1578923377533" />
     <state x="233" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1579626145638" />
-    <state x="280" y="92" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1579641885059" />
+    <state x="280" y="92" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1579641913278" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1578473641062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

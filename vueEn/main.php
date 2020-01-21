@@ -39,15 +39,15 @@ include ('enTete.php');
         <div class="corps">
             <?php
             if (isset($_SESSION['logged']) == true) {
-                echo "<a href=\"?lan=fr&action=test\">Pass the Test</a>";
+                echo "<a href=\"?lan=en&action=test\">Pass the Test</a>";
             } else {
-                echo "<a href=\"?lan=fr&action=documentation\">Documentation</a>";
+                echo "<a href=\"?lan=en&action=documentation\">Documentation</a>";
             }
 
             if (isset($_SESSION['logged']) == true) {
-                echo "<a href=\"?lan=fr&action=statistique\">Statistics</a>";
+                echo "<a href=\"?lan=en&action=statistique\">Statistics</a>";
             } else {
-                echo "<a href=\"?lan=fr&action=faq\">FAQ</a>";
+                echo "<a href=\"?lan=en&action=faq\">FAQ</a>";
             }
             ?>
         </div>

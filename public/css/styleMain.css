@@ -330,7 +330,7 @@ body {
         display: run-in;
     }
     .bodyContent{
-        width: 100%;
+        width: 150%;
         display: block;
         height: fit-content;
         text-align: center;
