@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat_2;charset=utf8','root',''); 
+=======
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
+>>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
 
 $pdoStat=$objPdo->prepare('SELECT * FROM faq');
 
@@ -20,7 +24,7 @@ $faqs=$pdoStat->fetchAll();
     <link rel="stylesheet"
           href="public/css/styleMain.css">
     <link rel="stylesheet"
-    <link rel="vue/faqEN.php"
+    <link rel="stylesheet"
           href="public/css/styleFaq.css">
     <script src="public/javascript/jquery-3.4.1.min.js"></script>
     <script src="public/javascript/deroule.js"></script>
@@ -32,9 +36,9 @@ $faqs=$pdoStat->fetchAll();
     <div class ="background">
 
         <div class="contenu">
-    
-    
-            <h1>Questions fréquentes</h1>  
+
+
+            <h1>Questions fréquentes</h1>
              <?php foreach ($faqs as $faq):  ?>
                 <div class="section">
                    <h3><?= $faq['question'] ?></h3>
@@ -52,4 +56,4 @@ $faqs=$pdoStat->fetchAll();
     include('piedPage.php');
     ?>
 </body>
-</html> 
+</html>

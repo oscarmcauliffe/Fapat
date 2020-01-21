@@ -1,3 +1,4 @@
+<?php $PageActuelle = "public/vue/documentation.php;" ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,8 +44,9 @@
                   <img src="public/images/helicopter.png" class="image" >
               </div>
           </div>
-          <div class="trait"
-          <!-- -------------------- section suivante------------------------------------- -->
+          <div class="trait">
+            <! // img src="public/images/docOnScroll.png"  >
+            <!-- -------------------- section suivante------------------------------------- -->
           </div>
           <div class="section">
               <div class="photo">
@@ -68,6 +70,8 @@
               </div>
           </div>
           <!-- ----------------------------------------------------------------- -->
+
+          </script>
       </div>
     </div>
     <?php

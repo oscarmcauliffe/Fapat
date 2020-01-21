@@ -21,7 +21,7 @@ function logIn($username,$password){
             exit;
         }
         else{
-            header('Location: index.php?action=profil');
+            header('Location: index.php?action=main');
             exit;
         }
     }
@@ -86,6 +86,7 @@ function addUser($nom,$prenom,$email,$date){
 }
 
 function showFAQ(){
+<<<<<<< HEAD
     $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
     
     $rep = $db->query("SELECT * FROM faq");
@@ -97,6 +98,15 @@ function showFAQ(){
             $reponse = $row['reponse'];
             echo $reponse;
     endwhile;
+=======
+$objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+
+$pdoStat=$objPdo->prepare('SELECT * FROM faq');
+
+$executeIsOk=$pdoStat->execute();
+
+$faqs=$pdoStat->fetchAll();
+>>>>>>> ce60f75c15cfeb791ab25177b30d465d2b750f05
      
 }
 
@@ -119,6 +129,35 @@ if($insertIsOk){
     
 header('Location: index.php?action=faqAdmin');
 }
+
+function suppFaq(){
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+
+    $pdoStat=$objPdo->prepare('DELETE FROM faq WHERE id=:num LIMIT 1');
+
+    $pdoStat->bindValue(':num', $_GET['id'], PDO::PARAM_INT);
+
+
+    $executeIsOk = $pdoStat-> execute();
+
+    header('Location: index.php?action=faqAdmin');
+}
+
+function saveModifFaq(){
+    
+    $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root',''); 
+            
+    $pdoStat = $objPdo->prepare('UPDATE faq set question=:question, reponse=:reponse WHERE id=:num LIMIT 1');
+            
+    $pdoStat->bindValue(':num',$_POST['idf'], PDO::PARAM_INT);
+    $pdoStat->bindValue(':question',$_POST['question'], PDO::PARAM_STR);
+    $pdoStat->bindValue(':reponse',$_POST['reponse'], PDO::PARAM_STR);
+            
+    $executeIsOk = $pdoStat->execute();
+    
+    header('Location: index.php?action=faqAdmin');
+}
+
 
 
 

@@ -21,7 +21,7 @@
             <div class="backgroundRight">
                 <div class="loginBox">
                     <form action="index.php?action=logIn" method="post">
-                        <p>Se Connecter</p>
+                        <h1>Se Connecter</h1>
                         <div class="loginWrite">
                             <input id ="name" type="text" name="username" required>
                             <label for="name" class="label-name">
@@ -35,8 +35,13 @@
                                 <span class="content-name">Mot de Passe</span>
                             </label>
                         </div>
-                        <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
-                        <label><b><?=errorLogIn()?></b></label>
+
+                        <div class="buttonBox">
+                          <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
+                          <label><b><?=errorLogIn()?></b></label>
+
+                        </div>
+
                     </form>
                 </div>
             </div>
