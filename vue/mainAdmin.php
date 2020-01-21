@@ -35,7 +35,7 @@
                      <div class="details">
                         <div class="content">
                             <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
-                            <a class="boutonOption"  href="index.php?action=#">Modifier les statistiques</a>
+                            <a class="boutonOption"  href="index.php?action=#">Accéder aux statistiques</a>
                         </div>
                      </div>
                 </div>

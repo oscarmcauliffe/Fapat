@@ -90,7 +90,7 @@ function showFAQ(){
     
     $rep = $db->query("SELECT * FROM faq");
         
-    while($row = $rep->fetch()) :
+    while($row = $rep -> fetch()) :
             //$id = $row['id'];
             $question = $row['question'];
             echo $question;
