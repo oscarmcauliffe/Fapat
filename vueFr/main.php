@@ -18,25 +18,23 @@ include('enTete.php');
         <div class="textContent">
             <p>Fighting Aircraft Pilot<br>Aptitude Test</p>
         </div>
-        <div class="left">
-            <?php
-            if (isset($_SESSION['logged']) == true) {
-                if (isset($_SESSION['gestion'])) {
-                    echo "<div class=\"corps\">
+        <?php
+        if (isset($_SESSION['logged']) == true) {
+            if (isset($_SESSION['gestion'])) {
+                echo "<div class=\"corps\">
                     <a href=\"?lan=fr&action=mainAdmin\">Gestion</a>
                 </div>";
-                } else {
-                    echo "<div class=\"corps\">
-                    <a href=\"?lan=fr&action=profil\">Profil</a>
-                </div>";
-                }
             } else {
                 echo "<div class=\"corps\">
-                    <a href=\"?lan=fr&action=connect\">Se connecter</a>
+                    <a href=\"?lan=fr&action=profil\">Profil</a>
                 </div>";
             }
-            ?>
-        </div>
+        } else {
+            echo "<div class=\"corps\">
+                    <a href=\"?lan=fr&action=connect\">Se connecter</a>
+                </div>";
+        }
+        ?>
         <div class="corps">
             <?php
             if (isset($_SESSION['logged']) == true) {
