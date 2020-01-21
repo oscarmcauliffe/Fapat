@@ -187,3 +187,17 @@
   border: 2px #ffba5a solid;
   transition: ease 0.3s;
 }
+
+
+@media screen and (max-width:800px) {
+  .percentBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .percent{
+    width: 60%;
+    margin: 1% 0%;
+    height: 30%;
+  }
+
+}
