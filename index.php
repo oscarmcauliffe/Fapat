@@ -88,11 +88,6 @@ if (isset($_GET['action'])){
             accessIfAdmin();
             modifierFaq();
             break;
-            
-        //case 'faqAdmin' :
-          //  accessIfAdmin();
-        //    faqAdmin();
-          //  break;
 
         default:
             main();

@@ -60,6 +60,9 @@ function modifierFaq(){
 
 function logOut(){
     unset($_SESSION['logged']);
+    if(isset($_SESSION['gestion'])){
+        unset($_SESSION['gestion']);
+    }
     header('Location: index.php?action=main');
     exit;
 }
