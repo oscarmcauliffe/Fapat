@@ -23,27 +23,27 @@ include ('enTete.php');
         if (isset($_SESSION['logged'])==true){
             if(isset($_SESSION['gestion'])){
                 echo"<div class=\"corps\">
-                    <a href=\"index.php?action=mainAdmin\">Gestion</a>
+                    <a href=\"?lan=fr&action=mainAdmin\">Gestion</a>
                 </div>";
             }
             else{echo"<div class=\"corps\">
-                    <a href=\"index.php?action=profil\">Profil</a>
+                    <a href=\"?lan=fr&action=profil\">Profil</a>
                 </div>";}
         }
         else{
             echo"<div class=\"corps\">
-                    <a href=\"index.php?action=connect\">Se connecter</a>
+                    <a href=\"?lan=fr&action=connect\">Se connecter</a>
                 </div>";
         }
         ?>
         <div class="corps">
-            <a href ="index.php?action=documentation">Documentation</a>
+            <a href ="?lan=fr&action=documentation">Documentation</a>
             <?php
             if (isset($_SESSION['logged'])==true){
-                echo"<a href=\"index.php?action=statistique\">Statistiques</a>";
+                echo"<a href=\"?lan=fr&action=statistique\">Statistiques</a>";
             }
             else{
-                echo"<a href=\"index.php?action=faq\">Questions Fréquentes</a>";
+                echo"<a href=\"?lan=fr&action=faq\">Questions Fréquentes</a>";
             }
             ?>
         </div>

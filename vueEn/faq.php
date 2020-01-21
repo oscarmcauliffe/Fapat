@@ -15,7 +15,7 @@ $faqs=$pdoStat->fetchAll();
 <html>
 <head>
     <title>
-        FAQ (fr)
+        FAQ (En)
     </title>
     <meta charset="UTF-8">
     <link rel="stylesheet"
@@ -31,11 +31,8 @@ $faqs=$pdoStat->fetchAll();
     include ('enTete.php');
     ?>
     <div class ="background">
-
         <div class="contenu">
-
-
-            <h1>Questions fréquentes</h1>
+            <h1>Frequently Asked Questions</h1>
              <?php foreach ($faqs as $faq):  ?>
                 <div class="section">
                    <h3><?= $faq['question'] ?></h3>

@@ -17,17 +17,17 @@ function logIn($username,$password){
 
         if($data['admin']==1){
             $_SESSION['gestion']=1;
-            header('Location: index.php?action=mainAdmin');
+            header('Location: ?lan=en&action=mainAdmin');
             exit;
         }
         else{
-            header('Location: index.php?action=main');
+            header('Location: ?lan=en&action=main');
             exit;
         }
     }
     else{
         $_SESSION['logfailed'] = true;
-        header('Location: index.php?action=connect');
+        header('Location: ?lan=en&action=connect');
         exit;
     }
 }
@@ -41,18 +41,18 @@ function newPassword($oldPassword,$newPassword,$newPassword2){
         if (password_verify($oldPassword,$data['password'])){
             $newPasswordHashed = password_hash($newPassword, PASSWORD_DEFAULT);
             $rep2 = $db->query("UPDATE users SET password = '".$newPasswordHashed."' WHERE users.username = '".$_SESSION['logged']."'");
-            header('Location: index.php?action=profil');
+            header('Location: ?lan=en&action=profil');
             exit;
         }
         else{
             $_SESSION['changeFailed'] = 1;
-            header('Location: index.php?action=profil');
+            header('Location: ?lan=en&action=profil');
             exit;
         }
     }
     else{
         $_SESSION['changeFailed'] = 2;
-        header('Location: index.php?action=profil');
+        header('Location: ?lan=en&action=profil');
         exit;
     }
 }
@@ -77,18 +77,18 @@ function addUser($nom,$prenom,$email,$date){
     $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
     $req = $db->query("insert into users (username,password,nom,prenom,email,dateNaissance) values ('".$username."', '".$passwordhashed."', '".$nom."', '".$prenom."', '".$email."', '".$date."')");
 
-    header('Location: index.php?action=ajoutCandidat');
+    header('Location: ?lan=en&action=ajoutCandidat');
 
     $to = $email;
-    $subject = "Connexion FAPAT";
-    $message = "Bonjour $nom,\nVoici vos identifiants pour le site FAPAT :\n$username\n$password";
+    $subject = "Connecting to FAPAT";
+    $message = "Hello $nom,\nHere is your login information for the FAPAT website :\n$username\n$password";
     mail($to, $subject, $message);
 }
 
 function showFAQ(){
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
-$pdoStat=$objPdo->prepare('SELECT * FROM faq');
+$pdoStat=$objPdo->prepare('SELECT * FROM faqEn');
 
 $executeIsOk=$pdoStat->execute();
 
@@ -99,7 +99,7 @@ $faqs=$pdoStat->fetchAll();
 function addFaq($question,$reponse){
 
 $objPdo = new PDO('mysql:host=localhost;dbname=fapat','root','');
-$pdoStat = $objPdo->prepare('INSERT INTO faq VALUES (NULL, :question, :reponse)');
+$pdoStat = $objPdo->prepare('INSERT INTO faqEn VALUES (NULL, :question, :reponse)');
 
 
 $pdoStat->bindValue(':question',$_POST['question'],PDO::PARAM_STR);
@@ -108,32 +108,32 @@ $pdoStat->bindValue(':reponse',$_POST['reponse'],PDO::PARAM_STR);
 $insertIsOk = $pdoStat->execute();
 
 if($insertIsOk){
-    $message = 'faq ajoutée';
+    $message = 'faq added';
 } else {
-    $message = 'echec';
+    $message = 'error';
 }
 
-header('Location: index.php?action=faqAdmin');
+header('Location: ?lan=en&action=faqAdmin');
 }
 
 function suppFaq(){
     $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
-    $pdoStat=$objPdo->prepare('DELETE FROM faq WHERE id=:num LIMIT 1');
+    $pdoStat=$objPdo->prepare('DELETE FROM faqEn WHERE id=:num LIMIT 1');
 
     $pdoStat->bindValue(':num', $_GET['id'], PDO::PARAM_INT);
 
 
     $executeIsOk = $pdoStat-> execute();
 
-    header('Location: index.php?action=faqAdmin');
+    header('Location: ?lan=en&action=faqAdmin');
 }
 
 function saveModifFaq(){
 
     $objPdo = new PDO('mysql:host=localhost;dbname=fapat;charset=utf8','root','');
 
-    $pdoStat = $objPdo->prepare('UPDATE faq set question=:question, reponse=:reponse WHERE id=:num LIMIT 1');
+    $pdoStat = $objPdo->prepare('UPDATE faqEn set question=:question, reponse=:reponse WHERE id=:num LIMIT 1');
 
     $pdoStat->bindValue(':num',$_POST['idf'], PDO::PARAM_INT);
     $pdoStat->bindValue(':question',$_POST['question'], PDO::PARAM_STR);
@@ -141,7 +141,7 @@ function saveModifFaq(){
 
     $executeIsOk = $pdoStat->execute();
 
-    header('Location: index.php?action=faqAdmin');
+    header('Location: ?lan=en&action=faqAdmin');
 }
 
 function suppUser(){
@@ -154,7 +154,7 @@ function suppUser(){
 
     $executeIsOk = $pdoStat-> execute();
 
-    header('Location: index.php?action=modifCandidat');
+    header('Location: ?lan=en&action=modifCandidat');
     
 }
 
@@ -172,11 +172,22 @@ function saveModifUser(){
             
     $executeIsOk = $pdoStat->execute();
     
-    header('Location: index.php?action=modifCandidat');
+    header('Location: ?lan=en&action=modifCandidat');
     
 }
 
+function dataStat(){
+    $conn = new mysqli("localhost","root","","fapat");
+    $statSql = "SELECT score FROM stats ORDER BY score ASC";
+    $resultStat = $conn->query($statSql);
+    $data = array();
+    foreach ($resultStat as $row) {
+        $data[] = $row;
+    }
 
+    $resultStat->close();
+    $conn->close();
 
-
+    print json_encode($data);
+}
 ?>

@@ -15,7 +15,7 @@ $userModif = $pdoStat->fetch();
 <html>
     <head>
     <title>
-        Modification de la FAQ (fr)
+        Modif Profil (Fr)
     </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" 
@@ -38,7 +38,7 @@ $userModif = $pdoStat->fetch();
                 <div class="modifFaq">
                     <h2>Modifier le profil</h2>
             
-                    <form action="index.php?action=saveModifUser" method="post">
+                    <form action="?lan=fr&action=saveModifUser" method="post">
                         <input type="hidden" name="id" value="<?= $userModif['id'] ?>">
                         
                         <p>

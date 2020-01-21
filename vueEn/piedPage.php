@@ -2,17 +2,17 @@
   <div class="textFooterBox">
     <div class="linkFooter1">
       <h3>Lien du Site</h3>
-        <a href="index.php?action=nousContacter" class="buttonFoot">
-            Nous Contacter
+        <a href="?lan=en&action=nousContacter" class="buttonFoot">
+            Contact Us
         </a>
-        <a href="index.php?action=conditions" class="buttonFoot">
-            Conditions d' Utilisation
+        <a href="?lan=en&action=conditions" class="buttonFoot">
+            Terms of Use
         </a>
         </div>
         <div class="linkFooter2">
             <h3>Information</h3>
-            <a href="index.php?action=quiSommesNous" class="buttonFoot">
-                Qui sommes-nous ?
+            <a href="?lan=en&action=quiSommesNous" class="buttonFoot">
+                Who are we?
             </a>
         </div>
 

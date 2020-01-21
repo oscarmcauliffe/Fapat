@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        Test FAPAT (Fr)
+        Modif Candidat (Fr)
     </title>
     <meta charset="UTF-8">
     <link rel="stylesheet"
@@ -58,9 +58,9 @@
                             <td><?php echo $row['email']; ?></td>
                             <td><?php echo $row['admin']; ?></td>
                             <td><?php echo $row['dateNaissance']; ?></td>
-                            <td> <a id="modif" class="bouton" href="index.php?action=modifierUser&id=<?= $row['id']?>" >Modifier <br> </a>
+                            <td> <a id="modif" class="bouton" href="?lan=fr&action=modifierUser&id=<?= $row['id']?>" >Modifier <br> </a>
                                 
-                                <a id="sup" class="bouton" href="index.php?action=suppUser&id=<?= $row['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cet utilisateur ?');">Supprimer</a> </td>
+                                <a id="sup" class="bouton" href="?lan=fr&action=suppUser&id=<?= $row['id']?>" onclick=" return confirm('Etes vous sur de vouloir supprimer cet utilisateur ?');">Supprimer</a> </td>
                         </tr>
 
                     <?php endwhile ?>

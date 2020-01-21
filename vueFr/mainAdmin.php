@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>
-        Test FAPAT (Fr)
+        Admin (Fr)
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1, maximum-scale=1, user-scalable=1" />
     <link rel="stylesheet"
-          href="public/css/StyleMain.css">
+          href="public/css/styleMain.css">
     <link rel="stylesheet"
-          href="public/css/StyleMainAdmin.css">
+          href="public/css/styleMainAdmin.css">
 </head>
 <body>
     <?php
@@ -22,8 +22,8 @@
                     <img src="public/images/Test2.jpg">
                     <div class="details">
                         <div class="content">
-                            <a class="boutonOption" href="index.php?action=#">Modifier le test</a>
-                            <a class="boutonOption"  href="index.php?action=#">Consulter le test</a>
+                            <a class="boutonOption" href="?lan=fr&action=#">Modifier le test</a>
+                            <a class="boutonOption"  href="?lan=fr&action=#">Consulter le test</a>
                         </div>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
                     <img src="public/images/documentation1.jpg">
                      <div class="details">
                         <div class="content">
-                            <a class="boutonOption"  href="index.php?action=faqAdmin">Modifier la FAQ</a>
+                            <a class="boutonOption"  href="?lan=fr&action=faqAdmin">Modifier la FAQ</a>
 
-                            <a class="boutonOption"  href="index.php?action=statistique">Consulter les statistiques</a>
+                            <a class="boutonOption"  href="?lan=fr&action=statistique">Consulter les statistiques</a>
 
                         </div>
                      </div>
@@ -48,8 +48,8 @@
                     <img src="public/images/Candidats1.jpg">
                      <div class="details">
                          <div class="content">
-                             <a class="boutonOption" href="index.php?action=ajoutCandidat">Ajouter un profil</a>
-                             <a class="boutonOption" href="index.php?action=modifCandidat">Modifier un profil</a>
+                             <a class="boutonOption" href="?lan=fr&action=ajoutCandidat">Ajouter un profil</a>
+                             <a class="boutonOption" href="?lan=fr&action=modifCandidat">Modifier un profil</a>
                         </div>
                      </div>
                 </div>

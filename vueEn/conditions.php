@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-        A Propos (Fr)
+        Terms of Use (En)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
@@ -15,8 +15,8 @@
         include ('enTete.php');
         ?>
 
-        <div class="texte" style="width: 100%; display: block; margin-left: auto; margin-right: auto;">
-            <h2>A Propos</h2>
+        <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Terms of Use</h2>
             <hr>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

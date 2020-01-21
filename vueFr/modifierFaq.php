@@ -15,7 +15,7 @@ $faqModif = $pdoStat->fetch();
 <html>
     <head>
     <title>
-        Modification de la FAQ (fr)
+        Modif FAQ (Fr)
     </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" 
@@ -38,7 +38,7 @@ $faqModif = $pdoStat->fetch();
                 <div class="modifFaq">
                     <h2>Modifier la FAQ</h2>
             
-                    <form action="index.php?action=saveModifFaq" method="post">
+                    <form action="?lan=fr&action=saveModifFaq" method="post">
                         <input type="hidden" name="idf" value="<?= $faqModif['id'] ?>">
                         
                         <label for="question">Question : </label>

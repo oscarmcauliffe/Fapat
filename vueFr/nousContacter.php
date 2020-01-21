@@ -18,27 +18,27 @@
         <div class="backgroundAll">
             <div class="backgroundContact">
                 <div class="contactBox">
-                    <form action="index.php?action=mailContact" method="post" class="contactform">
+                    <form action="?lan=fr&action=mailContact" method="post" class="contactform">
                         <div style="padding: 15px">
                             <label for="name">
-                                <b>Name</b>
+                                <b>Nom</b>
                             </label>
-                            <input type="text" placeholder="Your name" name="name" required>
+                            <input type="text" placeholder="Votre Nom" name="name" required>
 
                             <label for="email">
                                 <b>E-Mail</b>
                             </label>
-                            <input type="email" placeholder="Your Email" name="email" required>
+                            <input type="email" placeholder="Votre Email" name="email" required>
 
                             <label for="subject" style="width:100%;">
-                                <b>Subject</b>
+                                <b>Sujet</b>
                             </label>
-                            <input type="text" placeholder="Subject" name="subject" required>
+                            <input type="text" placeholder="Sujet" name="subject" required>
 
                             <label for="message">
                                 <b>Message</b>
                             </label>
-                            <textarea placeholder="Message to send" name="message" rows="5" cols="50%" required style="resize: none"></textarea>
+                            <textarea placeholder="Message à envoyer" name="message" rows="5" cols="50%" required style="resize: none"></textarea>
 
                             <button type="submit" class="send">
                                 Envoyer

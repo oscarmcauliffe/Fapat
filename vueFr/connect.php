@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-        Connect (Fr)
+        Connection (Fr)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
@@ -20,7 +20,7 @@
 
             <div class="backgroundRight">
                 <div class="loginBox">
-                    <form action="index.php?action=logIn" method="post">
+                    <form action="?lan=fr&action=logIn" method="post">
                         <div class="title"><h1>Se Connecter</h1></div>
                        <div class="entreUtilisateur">
                         <div class="loginWrite">
@@ -41,7 +41,6 @@
                         <div class="buttonBox">
                           <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
                           <label><b><?=errorLogIn()?></b></label>
-
                         </div>
                         </div>
                     </form>
