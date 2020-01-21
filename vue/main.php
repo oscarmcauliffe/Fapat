@@ -38,7 +38,14 @@ include ('enTete.php');
         ?>
         <div class="corps">
             <a href ="index.php?action=documentation">Documentation</a>
-            <a href="index.php?action=statistique">Statistiques</a>
+            <?php
+            if (isset($_SESSION['logged'])==true){
+                echo"<a href=\"index.php?action=statistique\">Statistiques</a>";
+            }
+            else{
+                echo"<a href=\"index.php?action=faq\">Questions Fréquentes</a>";
+            }
+            ?>
         </div>
     </div>
 </div>
